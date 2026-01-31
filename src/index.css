@@ -1,0 +1,44 @@
+:root {
+  --bg-primary: #0f172a; /* Slate 900 */
+  --bg-secondary: #1e293b; /* Slate 800 */
+  --text-primary: #f8fafc; /* Slate 50 */
+  --text-secondary: #94a3b8; /* Slate 400 */
+  --accent: #3b82f6; /* Blue 500 */
+  --accent-hover: #2563eb; /* Blue 600 */
+  --danger: #ef4444;
+  --warning: #f59e0b;
+  --success: #10b981;
+  --border: #334155;
+  --radius: 8px;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 600px;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  padding: 4px;
+  border-radius: var(--radius);
+  transition: color 0.2s, background 0.2s;
+}
+
+.icon-btn:hover {
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+}
