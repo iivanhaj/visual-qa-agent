@@ -44,7 +44,7 @@ Provide:
 Be concise and practical.`;
 
             const completion = await client.chat.completions.create({
-                model: "gpt-5-mini",
+                model: "gpt-4o-mini",
                 messages: [
                     { role: "system", content: "You are an expert web developer helping to fix bugs. Provide clear, actionable advice." },
                     { role: "user", content: prompt }

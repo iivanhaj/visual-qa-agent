@@ -1,4 +1,4 @@
-import { createOpenAIClient } from './openai';
+import { createOpenAIClient } from '../openai';
 
 export interface PageContext {
     url: string;
@@ -30,7 +30,7 @@ export interface AgentFindings {
     metadata: {
         pagesAnalyzed?: number;
         elementsChecked?: number;
-        aiTokensUsed?: number;
+        ai TokensUsed ?: number;
     };
 }
 
@@ -84,7 +84,7 @@ export abstract class Agent {
         }
 
         const response = await client.chat.completions.create({
-            model: useVision ? 'gpt-5.2' : 'gpt-5-mini',
+            model: useVision ? 'gpt-4-turbo' : 'gpt-4o-mini',
             messages: messages,
             max_tokens: 1000,
             temperature: 0.3

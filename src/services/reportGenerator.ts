@@ -29,7 +29,7 @@ export class ReportGenerator {
         const aiSummary = await this.aiService.generateExecutiveSummary(report);
         lines.push(aiSummary);
         lines.push('');
-        lines.push('*Generated using OpenAI GPT-5-mini*');
+        lines.push('*Generated using OpenAI GPT-4o-mini*');
         lines.push('');
 
         // Score Breakdown

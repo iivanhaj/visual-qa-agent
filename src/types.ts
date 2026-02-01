@@ -15,8 +15,10 @@ export enum IssueType {
   SEO = 'seo',
   Security = 'security',
   BestPractice = 'best-practice',
-  Visual = 'visual'
+  Visual = 'visual',
+  UX = 'ux'
 }
+
 
 export enum TestType {
   Links = 'links',
@@ -28,8 +30,7 @@ export enum TestType {
   Performance = 'performance',
   Console = 'console',
   Images = 'images',
-  Security = 'security',
-  Visual = 'visual'
+  Security = 'security'
 }
 
 export interface Issue {

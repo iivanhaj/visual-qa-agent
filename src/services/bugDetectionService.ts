@@ -19,27 +19,12 @@ export class BugDetectionService {
     /**
      * Run all selected tests and generate a comprehensive bug report
      */
-    async runTests(selectedTests: TestType[], visualIssues: Issue[] = []): Promise<BugReport> {
+    async runTests(selectedTests: TestType[]): Promise<BugReport> {
         const testResults: TestResult[] = [];
-        const allIssues: Issue[] = [...visualIssues]; // Include visual issues if provided
+        const allIssues: Issue[] = [];
 
         // Initialize AI service
         await this.aiService.initialize();
-
-        // Add visual issues as a test result if we have any
-        if (visualIssues.length > 0) {
-            console.log(`✅ Visual analysis provided ${visualIssues.length} issues`);
-            testResults.push({
-                testType: TestType.Images, // Using Images as proxy for visual
-                passed: false,
-                totalChecks: visualIssues.length,
-                passedChecks: 0,
-                failedChecks: visualIssues.length,
-                issues: visualIssues,
-                duration: 0,
-                timestamp: new Date()
-            });
-        }
 
         for (const testType of selectedTests) {
             const startTime = Date.now();
@@ -73,11 +58,6 @@ export class BugDetectionService {
                         break;
                     case TestType.Security:
                         issues = this.testSecurity();
-                        break;
-                    case TestType.Visual:
-                        // Visual analysis handled by background script
-                        // Issues will be injected separately
-                        issues = [];
                         break;
                 }
 
@@ -475,8 +455,7 @@ export class BugDetectionService {
             [TestType.Performance]: 12,
             [TestType.Console]: 1,
             [TestType.Images]: this.document.querySelectorAll('img').length,
-            [TestType.Security]: 10,
-            [TestType.Visual]: 1
+            [TestType.Security]: 10
         };
         return counts[testType] || 10;
     }
