@@ -1,18 +1,26 @@
 {
   "manifest_version": 3,
-  "name": "Visual QA Agent",
-  "version": "1.0.0",
+  "name": "Visual QA Agent - Advanced Bug Detector",
+  "version": "2.0.0",
+  "description": "Comprehensive web bug detection with SEO, accessibility, performance, and security testing. Export actionable design documents.",
   "permissions": [
     "activeTab",
     "scripting",
-    "storage"
+    "storage",
+    "sidePanel",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
   ],
   "action": {
-    "default_popup": "index.html",
     "default_title": "Visual QA Agent"
   },
+  "side_panel": {
+    "default_path": "index.html"
+  },
   "background": {
-    "service_worker": "src/background.ts",
+    "service_worker": "background.js",
     "type": "module"
   },
   "content_scripts": [
@@ -21,13 +29,14 @@
         "<all_urls>"
       ],
       "js": [
-        "src/content.ts"
-      ]
+        "content.js"
+      ],
+      "run_at": "document_idle"
     }
   ],
   "icons": {
-    "16": "public/vite.svg",
-    "48": "public/vite.svg",
-    "128": "public/vite.svg"
+    "16": "vite.svg",
+    "48": "vite.svg",
+    "128": "vite.svg"
   }
 }
