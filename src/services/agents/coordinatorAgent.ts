@@ -31,7 +31,7 @@ Be concise, clear, and actionable.`;
      */
     async orchestrate(context: PageContext): Promise<{
         executiveSummary: string;
-        allFindings: AgentFindings[];
+        agentFindings: AgentFindings[];
         synthesizedReport: any;
     }> {
         console.log(`${this.emoji} [${this.name}] Orchestrating ${this.agents.length} agents...`);
@@ -79,7 +79,7 @@ Be concise, clear, and actionable.`;
 
             return {
                 executiveSummary,
-                allFindings: this.allFindings,
+                agentFindings: this.allFindings,
                 synthesizedReport: synthesized
             };
 

@@ -86,6 +86,23 @@ sequenceDiagram
 
 ## 🛠️ Installation Instructions
 
+### Option 1: Quick Install (No Coding Required)
+Use this if you just want to run the extension without setting up Node.js.
+
+1.  **Download Code:** Click **Code** > **Download ZIP** (or clone this repo).
+2.  **Unzip** the file.
+3.  **Open Chrome Extensions:**
+    *   Go to `chrome://extensions/` in your browser.
+    *   Toggle **Developer mode** (top right corner).
+4.  **Load Extension:**
+    *   Click **Load unpacked**.
+    *   Select the **`dist`** folder inside the downloaded `visual-qa-agent` folder.
+    *   ⚠️ **Note:** Make sure you select the `dist` folder, not the root folder.
+5.  **Run:** Open the extension from your toolbar and add your API Key in Settings!
+
+### Option 2: Developer Setup (Build from Source)
+Use this if you want to modify the code.
+
 ### Prerequisites
 - Node.js (v16+)
 - OpenAI API Key
@@ -104,10 +121,9 @@ npm run build
 
 ### 2. Load into Chrome
 1. Open Chrome and navigate to `chrome://extensions/`.
-2. Toggle **Developer mode** (top right).
+2. Toggle **Developer mode**.
 3. Click **Load unpacked**.
-4. Select the **`dist`** folder (inside the project directory).
-   > ⚠️ **Important:** Do NOT select the root folder. Select `dist`.
+4. Select the **`dist`** folder.
 
 ### 3. Setup
 1. Click the **Visual QA Agent** icon in your toolbar (or use `Alt+Shift+T`).

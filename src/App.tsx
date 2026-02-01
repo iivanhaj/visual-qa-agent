@@ -6,6 +6,7 @@ import { IssueCard } from './components/IssueCard';
 import { ReportGenerator } from './services/reportGenerator';
 import { MultiAgentQAService, type MultiAgentReport } from './services/multiAgentQA';
 import type { AgentFindings } from './services/agents';
+import ReactMarkdown from 'react-markdown';
 
 type Tab = 'test' | 'results' | 'settings';
 
@@ -277,7 +278,12 @@ function App() {
             <header className="header">
                 <div className="header-content">
                     <h1>🔍 Visual QA Agent</h1>
-                    <p className="subtitle">Advanced Bug Detector v2.0</p>
+                    <p className="subtitle" style={{ color: '#fbbf24', fontWeight: 500 }}>⚠️ Refresh the page before starting test</p>
+                    {!apiKey && (
+                        <p style={{ fontSize: '11px', color: '#f87171', marginTop: '4px' }}>
+                            🔑 Please add OpenAI API Key in Settings first
+                        </p>
+                    )}
                 </div>
             </header>
 
@@ -364,6 +370,16 @@ function App() {
                             )}
                         </div>
 
+                        {/* Status Area - Moved Outside Details */}
+                        <div className="status-area" style={{ marginBottom: '20px' }}>
+                            <div className="status-header">
+                                <h4>Status: <span className={status.toLowerCase()}>{status}</span></h4>
+                            </div>
+                            <div className="logs" style={{ maxHeight: '150px', overflowY: 'auto' }}>
+                                {logs.map((log, i) => <div key={i} className="log-entry">{log}</div>)}
+                            </div>
+                        </div>
+
                         {/* Legacy Test Selection */}
                         <details style={{ marginBottom: '20px' }}>
                             <summary style={{ cursor: 'pointer', padding: '10px', background: 'rgba(255, 255, 255, 0.05)', borderRadius: '8px', marginBottom: '10px' }}>
@@ -401,15 +417,6 @@ function App() {
                                         ⚡ Quick Scan (All Tests)
                                     </button>
                                 </div>
-
-                                <div className="status-area">
-                                    <div className="status-header">
-                                        <h4>Status: <span className={status.toLowerCase()}>{status}</span></h4>
-                                    </div>
-                                    <div className="logs">
-                                        {logs.map((log, i) => <div key={i} className="log-entry">{log}</div>)}
-                                    </div>
-                                </div>
                             </div>
                         </details>
                     </div>
@@ -417,6 +424,28 @@ function App() {
 
                 {activeTab === 'results' && (
                     <div className="results-panel">
+                        {/* AI Executive Summary */}
+                        {multiAgentReport?.executiveSummary && (
+                            <div className="summary-card" style={{
+                                background: 'linear-gradient(to right, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1))',
+                                padding: '20px',
+                                borderRadius: '12px',
+                                marginBottom: '24px',
+                                border: '1px solid rgba(102, 126, 234, 0.2)'
+                            }}>
+                                <h3 style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: 0, marginBottom: '12px', color: '#fff' }}>
+                                    🤖 AI Executive Summary
+                                </h3>
+                                <div className="markdown-content" style={{
+                                    lineHeight: '1.6',
+                                    fontSize: '14px',
+                                    color: 'rgba(255, 255, 255, 0.9)'
+                                }}>
+                                    <ReactMarkdown>{multiAgentReport.executiveSummary}</ReactMarkdown>
+                                </div>
+                            </div>
+                        )}
+
                         {bugReport ? (
                             <>
                                 <ResultsDashboard report={bugReport} />

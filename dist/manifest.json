@@ -1,0 +1,60 @@
+{
+  "manifest_version": 3,
+  "name": "Visual QA Agent - Advanced Bug Detector",
+  "version": "2.0.0",
+  "description": "Comprehensive web bug detection with SEO, accessibility, performance, and security testing. Export actionable design docs for engineers and AI tools.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs",
+    "downloads",
+    "sidePanel"
+  ],
+  "action": {
+    "default_title": "Visual QA Agent"
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "assets/content.ts-loader-CoJuInYN.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+T"
+      },
+      "description": "Open Visual QA Agent Sidebar"
+    }
+  },
+  "icons": {
+    "16": "public/vite.svg",
+    "48": "public/vite.svg",
+    "128": "public/vite.svg"
+  },
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "resources": [
+        "assets/aiSuggestionService-B5Hx7-2E.js",
+        "assets/index-DU3xAm2I.js",
+        "assets/content.ts-IFwO3_Zw.js"
+      ],
+      "use_dynamic_url": false
+    }
+  ]
+}

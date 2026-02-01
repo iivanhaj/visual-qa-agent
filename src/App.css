@@ -815,3 +815,27 @@ body {
     color: #60a5fa;
     overflow-x: auto;
 }
+
+/* Markdown Content Styles */
+.markdown-content strong {
+    color: #fbbf24;
+    font-weight: 600;
+}
+
+.markdown-content ul {
+    padding-left: 20px;
+    margin: 8px 0;
+}
+
+.markdown-content li {
+    margin-bottom: 4px;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 1.1em;
+}
