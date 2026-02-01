@@ -1,0 +1,1200 @@
+{
+  "url": "https://labs.google.com/search?source=hp",
+  "timestamp": "2026-02-01T11:19:33.302Z",
+  "healthScore": {
+    "overall": 1,
+    "functionality": 100,
+    "accessibility": 100,
+    "performance": 47,
+    "seo": 40,
+    "security": 100
+  },
+  "testResults": [
+    {
+      "testType": "links",
+      "passed": true,
+      "totalChecks": 11,
+      "passedChecks": 11,
+      "failedChecks": 0,
+      "issues": [],
+      "duration": 0,
+      "timestamp": "2026-02-01T11:19:28.438Z"
+    },
+    {
+      "testType": "buttons",
+      "passed": false,
+      "totalChecks": 17,
+      "passedChecks": 5,
+      "failedChecks": 12,
+      "issues": [
+        {
+          "id": "34208fbf-d637-406d-b147-2e932efcf7c8",
+          "type": "best-practice",
+          "severity": "low",
+          "title": "Button Missing Type Attribute",
+          "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.aM0mz.JObZef > div.Oa5HGc > div.Hgpnmd > button.IfuKke.ZkFQ1d",
+          "element": "<button class=\"IfuKke  ZkFQ1d\" aria-label=\"Turn on AI Mode\" jsaction=\"click:sSBPhc\" jslog=\"226495; track:click,impression; metadata:W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWyIyMiIsIk1lZXQlMjBBSSUyME1vZGUlM0ElMjBhJTIwd2hvbGUlMjBuZXclMjB3YXklMjB0byUyMHNlYXJjaCIsIklOX0FQUF9OQVZJR0FUSU9OX0NPTU1BTkQiLCIvc2VhcmNoL2V4cGVyaW1lbnQvMjI_YWU9dHJ1ZSZlZXA9aGVwciJdXQ==;\">Turn on</button>",
+          "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+          "codeSnippet": {
+            "before": "<button>Click</button>",
+            "after": "<button type=\"button\">Click</button>"
+          }
+        },
+        {
+          "id": "a0401397-529b-4035-8535-7a1c56a2878f",
+          "type": "best-practice",
+          "severity": "low",
+          "title": "Button Missing Type Attribute",
+          "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO.szcgid > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.VfPpkd-dgl2Hf-ppHlrf-sM5MNb > button.AeBiU-LgbsSe.AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc",
+          "element": "<button class=\"AeBiU-LgbsSe AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc AeBiU-LgbsSe-OWXEXe-dgl2Hf AeBiU-kSE8rc-FoKg4d-sLO9V-YoZ4jf undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jscontroller=\"O626Fe\" jsaction=\"click:h5M12e;clickmod:h5M12e;pointerdown:FEiYhc;pointerup:mF5Elf;pointerenter:EX0mI;pointerleave:vpvbp;pointercancel:xyn4sd;contextmenu:xexox; focus:h06R8; blur:zjh6rb;mlnRJb:fLiPzd;\" data-idom-class=\"undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jsname=\"rhHFf\" aria-label=\"Feedback for AI Mode\" jslog=\"179258; track:click; metadata:W1siMjIiXV0=\"><span class=\"XjoK4b\"></span><span class=\"UTNHae\" jscontroller=\"LBaJxb\" jsname=\"m9ZlFb\"></span><span class=\"AeBiU-RLmnJb\"></span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-M1Soyc\" jsname=\"Xr1QTb\"><i class=\"google-material-icons notranslate VfPpkd-kBDsod google-symbols\" aria-hidden=\"true\">rate_review</i></span><span jsname=\"V67aGc\" class=\"AeBiU-vQzf8d\" aria-hidden=\"true\">Feedback</span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-UbuQg\" jsname=\"UkTUqb\"></span></button>",
+          "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+          "codeSnippet": {
+            "before": "<button>Click</button>",
+            "after": "<button type=\"button\">Click</button>"
+          }
+        },
+        {
+          "id": "7c50c605-0cec-4153-9044-3d61d83d0d61",
+          "type": "best-practice",
+          "severity": "low",
+          "title": "Button Missing Type Attribute",
+          "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO.szcgid > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.CNMj4c > button.hXXdee.kPTQic",
+          "element": "<button class=\"hXXdee kPTQic\" aria-label=\"Turn on AI Mode\" jsname=\"LgbsSe\" jsaction=\"animationend:hdXq8d(kgzUNd)\"><div class=\"EOYSYc\" jsname=\"kgzUNd\"><div class=\"wKKiqd\"></div></div><div class=\"Tm5o9e\"><div class=\"M0FLac\" jsname=\"V67aGc\">Turn on</div></div></button>",
+          "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+          "codeSnippet": {
+            "before": "<button>Click</button>",
+            "after": "<button type=\"button\">Click</button>"
+          }
+        },
+        {
+          "id": "e6240b4c-8efb-454f-96a5-bc9245f789d5",
+          "type": "best-practice",
+          "severity": "low",
+          "title": "Button Missing Type Attribute",
+          "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO.szcgid > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.VfPpkd-dgl2Hf-ppHlrf-sM5MNb > button.AeBiU-LgbsSe.AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc",
+          "element": "<button class=\"AeBiU-LgbsSe AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc AeBiU-LgbsSe-OWXEXe-dgl2Hf AeBiU-kSE8rc-FoKg4d-sLO9V-YoZ4jf undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jscontroller=\"O626Fe\" jsaction=\"click:h5M12e;clickmod:h5M12e;pointerdown:FEiYhc;pointerup:mF5Elf;pointerenter:EX0mI;pointerleave:vpvbp;pointercancel:xyn4sd;contextmenu:xexox; focus:h06R8; blur:zjh6rb;mlnRJb:fLiPzd;\" data-idom-class=\"undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jsname=\"rhHFf\" aria-label=\"Feedback for Google app for Windows\" jslog=\"179258; track:click; metadata:W1siNDAiXV0=\"><span class=\"XjoK4b\"></span><span class=\"UTNHae\" jscontroller=\"LBaJxb\" jsname=\"m9ZlFb\"></span><span class=\"AeBiU-RLmnJb\"></span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-M1Soyc\" jsname=\"Xr1QTb\"><i class=\"google-material-icons notranslate VfPpkd-kBDsod google-symbols\" aria-hidden=\"true\">rate_review</i></span><span jsname=\"V67aGc\" class=\"AeBiU-vQzf8d\" aria-hidden=\"true\">Feedback</span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-UbuQg\" jsname=\"UkTUqb\"></span></button>",
+          "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+          "codeSnippet": {
+            "before": "<button>Click</button>",
+            "after": "<button type=\"button\">Click</button>"
+          }
+        },
+        {
+          "id": "569a07b3-480c-4777-9514-5c99d72a1047",
+          "type": "best-practice",
+          "severity": "low",
+          "title": "Button Missing Type Attribute",
+          "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO.szcgid > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.CNMj4c > button.hXXdee.kPTQic",
+          "element": "<button class=\"hXXdee kPTQic\" aria-label=\"Download the Google app for Windows\" jsname=\"LgbsSe\" jsaction=\"animationend:hdXq8d(kgzUNd)\" role=\"link\"><div class=\"EOYSYc\" jsname=\"kgzUNd\"><div class=\"wKKiqd\"></div></div><div class=\"Tm5o9e\"><div class=\"M0FLac\" jsname=\"V67aGc\">Download app</div></div></button>",
+          "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+          "codeSnippet": {
+            "before": "<button>Click</button>",
+            "after": "<button type=\"button\">Click</button>"
+          }
+        },
+        {
+          "id": "53fc738d-228a-4fab-abea-fd35495cc4b9",
+          "type": "best-practice",
+          "severity": "low",
+          "title": "Button Missing Type Attribute",
+          "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.VfPpkd-dgl2Hf-ppHlrf-sM5MNb > button.AeBiU-LgbsSe.AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc",
+          "element": "<button class=\"AeBiU-LgbsSe AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc AeBiU-LgbsSe-OWXEXe-dgl2Hf AeBiU-kSE8rc-FoKg4d-sLO9V-YoZ4jf undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jscontroller=\"O626Fe\" jsaction=\"click:h5M12e;clickmod:h5M12e;pointerdown:FEiYhc;pointerup:mF5Elf;pointerenter:EX0mI;pointerleave:vpvbp;pointercancel:xyn4sd;contextmenu:xexox; focus:h06R8; blur:zjh6rb;mlnRJb:fLiPzd;\" data-idom-class=\"undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jsname=\"rhHFf\" aria-label=\"Feedback for NotebookLM\" jslog=\"179258; track:click; metadata:W1siMjMiXV0=\"><span class=\"XjoK4b\"></span><span class=\"UTNHae\" jscontroller=\"LBaJxb\" jsname=\"m9ZlFb\"></span><span class=\"AeBiU-RLmnJb\"></span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-M1Soyc\" jsname=\"Xr1QTb\"><i class=\"google-material-icons notranslate VfPpkd-kBDsod google-symbols\" aria-hidden=\"true\">rate_review</i></span><span jsname=\"V67aGc\" class=\"AeBiU-vQzf8d\" aria-hidden=\"true\">Feedback</span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-UbuQg\" jsname=\"UkTUqb\"></span></button>",
+          "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+          "codeSnippet": {
+            "before": "<button>Click</button>",
+            "after": "<button type=\"button\">Click</button>"
+          }
+        },
+        {
+          "id": "59f1051c-94b7-4d4a-890d-6cc64440f0d3",
+          "type": "best-practice",
+          "severity": "low",
+          "title": "Button Missing Type Attribute",
+          "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.CNMj4c > button.hXXdee.kPTQic",
+          "element": "<button class=\"hXXdee kPTQic\" aria-label=\"Try now\" jsname=\"LgbsSe\" jsaction=\"animationend:hdXq8d(kgzUNd)\" role=\"link\"><div class=\"EOYSYc\" jsname=\"kgzUNd\"><div class=\"wKKiqd\"></div></div><div class=\"Tm5o9e\"><div class=\"M0FLac\" jsname=\"V67aGc\">Try now</div></div></button>",
+          "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+          "codeSnippet": {
+            "before": "<button>Click</button>",
+            "after": "<button type=\"button\">Click</button>"
+          }
+        },
+        {
+          "id": "897708c6-35f9-4844-bfba-5f00926de116",
+          "type": "best-practice",
+          "severity": "low",
+          "title": "Button Missing Type Attribute",
+          "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.VfPpkd-dgl2Hf-ppHlrf-sM5MNb > button.AeBiU-LgbsSe.AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc",
+          "element": "<button class=\"AeBiU-LgbsSe AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc AeBiU-LgbsSe-OWXEXe-dgl2Hf AeBiU-kSE8rc-FoKg4d-sLO9V-YoZ4jf undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jscontroller=\"O626Fe\" jsaction=\"click:h5M12e;clickmod:h5M12e;pointerdown:FEiYhc;pointerup:mF5Elf;pointerenter:EX0mI;pointerleave:vpvbp;pointercancel:xyn4sd;contextmenu:xexox; focus:h06R8; blur:zjh6rb;mlnRJb:fLiPzd;\" data-idom-class=\"undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jsname=\"rhHFf\" aria-label=\"Feedback for Viola the Bird\" jslog=\"179258; track:click; metadata:W1siMTMiXV0=\"><span class=\"XjoK4b\"></span><span class=\"UTNHae\" jscontroller=\"LBaJxb\" jsname=\"m9ZlFb\"></span><span class=\"AeBiU-RLmnJb\"></span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-M1Soyc\" jsname=\"Xr1QTb\"><i class=\"google-material-icons notranslate VfPpkd-kBDsod google-symbols\" aria-hidden=\"true\">rate_review</i></span><span jsname=\"V67aGc\" class=\"AeBiU-vQzf8d\" aria-hidden=\"true\">Feedback</span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-UbuQg\" jsname=\"UkTUqb\"></span></button>",
+          "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+          "codeSnippet": {
+            "before": "<button>Click</button>",
+            "after": "<button type=\"button\">Click</button>"
+          }
+        },
+        {
+          "id": "f8e743b9-010f-4f7b-b0d4-91b26133c435",
+          "type": "best-practice",
+          "severity": "low",
+          "title": "Button Missing Type Attribute",
+          "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.CNMj4c > button.hXXdee.kPTQic",
+          "element": "<button class=\"hXXdee kPTQic\" aria-label=\"Play with Viola the Bird\" jsname=\"LgbsSe\" jsaction=\"animationend:hdXq8d(kgzUNd)\" role=\"link\"><div class=\"EOYSYc\" jsname=\"kgzUNd\"><div class=\"wKKiqd\"></div></div><div class=\"Tm5o9e\"><div class=\"M0FLac\" jsname=\"V67aGc\">Play</div></div></button>",
+          "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+          "codeSnippet": {
+            "before": "<button>Click</button>",
+            "after": "<button type=\"button\">Click</button>"
+          }
+        },
+        {
+          "id": "d9273309-74f5-498b-8e8e-76935b0d6543",
+          "type": "best-practice",
+          "severity": "low",
+          "title": "Button Missing Type Attribute",
+          "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.VfPpkd-dgl2Hf-ppHlrf-sM5MNb > button.AeBiU-LgbsSe.AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc",
+          "element": "<button class=\"AeBiU-LgbsSe AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc AeBiU-LgbsSe-OWXEXe-dgl2Hf AeBiU-kSE8rc-FoKg4d-sLO9V-YoZ4jf undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jscontroller=\"O626Fe\" jsaction=\"click:h5M12e;clickmod:h5M12e;pointerdown:FEiYhc;pointerup:mF5Elf;pointerenter:EX0mI;pointerleave:vpvbp;pointercancel:xyn4sd;contextmenu:xexox; focus:h06R8; blur:zjh6rb;mlnRJb:fLiPzd;\" data-idom-class=\"undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jsname=\"rhHFf\" aria-label=\"Feedback for Hindi Cinema\" jslog=\"179258; track:click; metadata:W1siMTUiXV0=\"><span class=\"XjoK4b\"></span><span class=\"UTNHae\" jscontroller=\"LBaJxb\" jsname=\"m9ZlFb\"></span><span class=\"AeBiU-RLmnJb\"></span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-M1Soyc\" jsname=\"Xr1QTb\"><i class=\"google-material-icons notranslate VfPpkd-kBDsod google-symbols\" aria-hidden=\"true\">rate_review</i></span><span jsname=\"V67aGc\" class=\"AeBiU-vQzf8d\" aria-hidden=\"true\">Feedback</span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-UbuQg\" jsname=\"UkTUqb\"></span></button>",
+          "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+          "codeSnippet": {
+            "before": "<button>Click</button>",
+            "after": "<button type=\"button\">Click</button>"
+          }
+        },
+        {
+          "id": "05a583b9-9edc-4008-adb9-b695c6950526",
+          "type": "best-practice",
+          "severity": "low",
+          "title": "Button Missing Type Attribute",
+          "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.CNMj4c > button.hXXdee.kPTQic",
+          "element": "<button class=\"hXXdee kPTQic\" aria-label=\"Explore Hindi Cinema\" jsname=\"LgbsSe\" jsaction=\"animationend:hdXq8d(kgzUNd)\" role=\"link\"><div class=\"EOYSYc\" jsname=\"kgzUNd\"><div class=\"wKKiqd\"></div></div><div class=\"Tm5o9e\"><div class=\"M0FLac\" jsname=\"V67aGc\">Explore</div></div></button>",
+          "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+          "codeSnippet": {
+            "before": "<button>Click</button>",
+            "after": "<button type=\"button\">Click</button>"
+          }
+        },
+        {
+          "id": "1c7443a8-24e6-43e0-b277-22577324a551",
+          "type": "best-practice",
+          "severity": "low",
+          "title": "Button Missing Type Attribute",
+          "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.DgfZ4e > div.ORsxQb > div.jIFBle > div.VfPpkd-dgl2Hf-ppHlrf-sM5MNb > button.UywwFc-LgbsSe.UywwFc-LgbsSe-OWXEXe-dgl2Hf",
+          "element": "<button class=\"UywwFc-LgbsSe UywwFc-LgbsSe-OWXEXe-dgl2Hf UywwFc-StrnGf-YYd4I-VtOx3e UywwFc-kSE8rc-FoKg4d-sLO9V-YoZ4jf undefined jnfNDf EiZ8Dd FB7LUb\" jscontroller=\"O626Fe\" jsaction=\"click:h5M12e;clickmod:h5M12e;pointerdown:FEiYhc;pointerup:mF5Elf;pointerenter:EX0mI;pointerleave:vpvbp;pointercancel:xyn4sd;contextmenu:xexox; focus:h06R8; blur:zjh6rb;mlnRJb:fLiPzd;\" data-idom-class=\"undefined jnfNDf EiZ8Dd FB7LUb\" jsname=\"AUDZO\" aria-label=\"Get email updates\"><span class=\"XjoK4b\"></span><span class=\"MMvswb\"><span class=\"OLCwg\"></span></span><span class=\"UTNHae\" jscontroller=\"LBaJxb\" jsname=\"m9ZlFb\" soy-skip=\"\" ssk=\"6:RWVI5c\"></span><span class=\"UywwFc-RLmnJb\"></span><span class=\"UywwFc-kBDsod-Rtc0Jf UywwFc-kBDsod-Rtc0Jf-OWXEXe-M1Soyc\" jsname=\"Xr1QTb\"></span><span jsname=\"V67aGc\" class=\"UywwFc-vQzf8d\" aria-hidden=\"true\">Get updates</span><span class=\"UywwFc-kBDsod-Rtc0Jf UywwFc-kBDsod-Rtc0Jf-OWXEXe-UbuQg\" jsname=\"UkTUqb\"></span></button>",
+          "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+          "codeSnippet": {
+            "before": "<button>Click</button>",
+            "after": "<button type=\"button\">Click</button>"
+          }
+        }
+      ],
+      "duration": 1,
+      "timestamp": "2026-02-01T11:19:28.439Z"
+    },
+    {
+      "testType": "seo",
+      "passed": false,
+      "totalChecks": 15,
+      "passedChecks": 3,
+      "failedChecks": 12,
+      "issues": [
+        {
+          "id": "00c07ccd-c554-4c96-9159-8ed54ba3e233",
+          "type": "seo",
+          "severity": "high",
+          "title": "Missing Meta Description",
+          "description": "No meta description found. This affects how your page appears in search results.",
+          "location": "<head>",
+          "suggestion": "Add a meta description tag (150-160 characters) that summarizes the page content.",
+          "codeSnippet": {
+            "before": "<head>\n  <title>Page Title</title>",
+            "after": "<head>\n  <title>Page Title</title>\n  <meta name=\"description\" content=\"A compelling description of your page content.\">"
+          },
+          "resources": [
+            "https://moz.com/learn/seo/meta-description"
+          ]
+        },
+        {
+          "id": "5bf48e69-5489-484f-a67c-9253f72c07e1",
+          "type": "seo",
+          "severity": "high",
+          "title": "Missing H1 Heading",
+          "description": "No H1 heading found on the page. Every page should have exactly one H1.",
+          "location": "body",
+          "suggestion": "Add a single H1 heading that describes the main topic of the page.",
+          "codeSnippet": {
+            "before": "<body>\n  <h2>Some content</h2>",
+            "after": "<body>\n  <h1>Main Page Heading</h1>\n  <h2>Some content</h2>"
+          },
+          "resources": [
+            "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
+          ]
+        },
+        {
+          "id": "3c539b60-662c-4523-8090-61b853ef7c6f",
+          "type": "seo",
+          "severity": "low",
+          "title": "Image Has Empty Alt Text",
+          "description": "Image has empty alt text. Verify if this is truly decorative.",
+          "location": "header#gb > div.gb_Kd.gb_Nd > div.gb_2d.gb_wb > div.gb_Cd > div.gb_z.gb_vd > div.gb_D.gb_vb > a.gb_B.gb_0a > span.gb_be > img.gb_Q.gbii",
+          "element": "<img class=\"gb_Q gbii\" src=\"https://lh3.google.com/u/0/ogw/AF2bZyiNb5p86e0hwISzbw7UAtkNBBvZ8AcnzJZKVHbX2Ey5WA=s32-c-mo\" srcset=\"https://lh3.google.com/u/0/ogw/AF2bZyiNb5p86e0hwISzbw7UAtkNBBvZ8AcnzJZKVHbX2Ey5WA=s32-c-mo 1x, https://lh3.google.com/u/0/ogw/AF2bZyiNb5p86e0hwISzbw7UAtkNBBvZ8AcnzJZKVHbX2Ey5WA=s64-c-mo 2x \" alt=\"\" aria-hidden=\"true\" data-noaft=\"\">",
+          "suggestion": "If the image is decorative, consider adding role=\"presentation\". Otherwise, add descriptive alt text.",
+          "resources": [
+            "https://www.w3.org/WAI/tutorials/images/decorative/"
+          ]
+        },
+        {
+          "id": "e61b6b14-a1cc-446d-ad1e-1e30edfa2901",
+          "type": "seo",
+          "severity": "low",
+          "title": "Image Has Empty Alt Text",
+          "description": "Image has empty alt text. Verify if this is truly decorative.",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.aM0mz.JObZef > section.d5NbRd-gBNGNe.DvBau > img.DvBau",
+          "element": "<img src=\"https://www.gstatic.com/search-labs/2ed7270e-629a-45a3-9da2-a2fe00ad1898.jpg\" alt=\"\" class=\"DvBau\">",
+          "suggestion": "If the image is decorative, consider adding role=\"presentation\". Otherwise, add descriptive alt text.",
+          "resources": [
+            "https://www.w3.org/WAI/tutorials/images/decorative/"
+          ]
+        },
+        {
+          "id": "460a0e75-169d-4729-af21-5ecbcd72e3c5",
+          "type": "seo",
+          "severity": "low",
+          "title": "Image Has Empty Alt Text",
+          "description": "Image has empty alt text. Verify if this is truly decorative.",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO.szcgid > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+          "element": "<img src=\"https://www.gstatic.com/search-labs/5181e3f5-a5f5-4eb1-a09a-3dce0cb560e0.png\" alt=\"\" class=\"SDZEi\">",
+          "suggestion": "If the image is decorative, consider adding role=\"presentation\". Otherwise, add descriptive alt text.",
+          "resources": [
+            "https://www.w3.org/WAI/tutorials/images/decorative/"
+          ]
+        },
+        {
+          "id": "672ce4ff-95b6-4630-b52e-b8a0bfa515e3",
+          "type": "seo",
+          "severity": "low",
+          "title": "Image Has Empty Alt Text",
+          "description": "Image has empty alt text. Verify if this is truly decorative.",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO.szcgid > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+          "element": "<img src=\"https://www.gstatic.com/search-labs/11bbecb4-7a49-41cb-9f02-762ddd745628.png\" alt=\"\" class=\"SDZEi\">",
+          "suggestion": "If the image is decorative, consider adding role=\"presentation\". Otherwise, add descriptive alt text.",
+          "resources": [
+            "https://www.w3.org/WAI/tutorials/images/decorative/"
+          ]
+        },
+        {
+          "id": "d4320cf1-5b98-484e-b1c0-a3dbb888d4a1",
+          "type": "seo",
+          "severity": "low",
+          "title": "Image Has Empty Alt Text",
+          "description": "Image has empty alt text. Verify if this is truly decorative.",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+          "element": "<img src=\"https://www.gstatic.com/search-labs/a40255f7-6c52-4ea8-bc93-50a9a7dd83de.png\" alt=\"\" class=\"SDZEi\">",
+          "suggestion": "If the image is decorative, consider adding role=\"presentation\". Otherwise, add descriptive alt text.",
+          "resources": [
+            "https://www.w3.org/WAI/tutorials/images/decorative/"
+          ]
+        },
+        {
+          "id": "15841211-f7be-4698-9cb4-f24abb6be157",
+          "type": "seo",
+          "severity": "low",
+          "title": "Image Has Empty Alt Text",
+          "description": "Image has empty alt text. Verify if this is truly decorative.",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.oGEs5 > section.d5NbRd-gBNGNe.wCKe1d > img.wCKe1d",
+          "element": "<img src=\"https://www.gstatic.com/search-labs/db4f78ea-3bda-4c6b-971d-cfea7e9af409.png\" alt=\"\" class=\"wCKe1d\" data-iml=\"1298.5\">",
+          "suggestion": "If the image is decorative, consider adding role=\"presentation\". Otherwise, add descriptive alt text.",
+          "resources": [
+            "https://www.w3.org/WAI/tutorials/images/decorative/"
+          ]
+        },
+        {
+          "id": "b92b7aa7-7d63-4af1-af4d-a0d03e7bf4a1",
+          "type": "seo",
+          "severity": "low",
+          "title": "Image Has Empty Alt Text",
+          "description": "Image has empty alt text. Verify if this is truly decorative.",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+          "element": "<img src=\"https://www.gstatic.com/search-labs/9bbb3ab7-1572-4999-8ea1-2ea42e9d42d8.png\" alt=\"\" class=\"SDZEi\">",
+          "suggestion": "If the image is decorative, consider adding role=\"presentation\". Otherwise, add descriptive alt text.",
+          "resources": [
+            "https://www.w3.org/WAI/tutorials/images/decorative/"
+          ]
+        },
+        {
+          "id": "f4b5fa1e-2799-4f81-9b85-89cfd3f57d6e",
+          "type": "seo",
+          "severity": "low",
+          "title": "Image Has Empty Alt Text",
+          "description": "Image has empty alt text. Verify if this is truly decorative.",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.oGEs5 > section.d5NbRd-gBNGNe.wCKe1d > img.wCKe1d",
+          "element": "<img src=\"https://www.gstatic.com/search-labs/0962464a-34eb-43e9-ad93-f23c28ac37e6.png\" alt=\"\" class=\"wCKe1d\" data-iml=\"1251.800000000745\">",
+          "suggestion": "If the image is decorative, consider adding role=\"presentation\". Otherwise, add descriptive alt text.",
+          "resources": [
+            "https://www.w3.org/WAI/tutorials/images/decorative/"
+          ]
+        },
+        {
+          "id": "4887cb0e-91e6-4d02-9e14-33e13304d5c9",
+          "type": "seo",
+          "severity": "low",
+          "title": "Image Has Empty Alt Text",
+          "description": "Image has empty alt text. Verify if this is truly decorative.",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+          "element": "<img src=\"https://www.gstatic.com/search-labs/9bbb3ab7-1572-4999-8ea1-2ea42e9d42d8.png\" alt=\"\" class=\"SDZEi\">",
+          "suggestion": "If the image is decorative, consider adding role=\"presentation\". Otherwise, add descriptive alt text.",
+          "resources": [
+            "https://www.w3.org/WAI/tutorials/images/decorative/"
+          ]
+        },
+        {
+          "id": "70918ea8-6817-4383-accf-c4edabe45992",
+          "type": "seo",
+          "severity": "low",
+          "title": "Missing Open Graph Tags",
+          "description": "Missing og:title, og:description, og:image, og:url. Open Graph tags improve social media sharing.",
+          "location": "<head>",
+          "suggestion": "Add Open Graph meta tags for better social media preview when sharing.",
+          "codeSnippet": {
+            "before": "<head>",
+            "after": "<head>\n  <meta property=\"og:title\" content=\"Your Page Title\">\n  <meta property=\"og:description\" content=\"Page description\">\n  <meta property=\"og:image\" content=\"https://example.com/image.jpg\">\n  <meta property=\"og:url\" content=\"https://example.com/page\">"
+          },
+          "resources": [
+            "https://ogp.me/"
+          ]
+        }
+      ],
+      "duration": 2,
+      "timestamp": "2026-02-01T11:19:28.441Z"
+    },
+    {
+      "testType": "accessibility",
+      "passed": true,
+      "totalChecks": 20,
+      "passedChecks": 20,
+      "failedChecks": 0,
+      "issues": [],
+      "duration": 1,
+      "timestamp": "2026-02-01T11:19:28.442Z"
+    },
+    {
+      "testType": "performance",
+      "passed": false,
+      "totalChecks": 12,
+      "passedChecks": 0,
+      "failedChecks": 12,
+      "issues": [
+        {
+          "id": "5d0666e5-f8e5-456a-83c7-9772341686e4",
+          "type": "performance",
+          "severity": "low",
+          "title": "Image Missing Dimensions",
+          "description": "Image lacks width/height attributes, which can cause layout shifts.",
+          "location": "a#sdgBod > img.gb_0c",
+          "element": "<img class=\"gb_0c\" src=\"https://www.gstatic.com/search-labs/beaker/Labs_logo_dark_mode_1x.png\" srcset=\"https://www.gstatic.com/search-labs/beaker/Labs_logo_dark_mode_1x.png 1x, https://www.gstatic.com/search-labs/beaker/Labs_logo_dark_mode_2x.png 2x \" alt=\"\" aria-hidden=\"true\" role=\"presentation\" style=\"width:148px;height:24px\" data-atf=\"true\" data-iml=\"597.3000000007451\">",
+          "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+          "codeSnippet": {
+            "before": "<img src=\"https://www.gstatic.com/search-labs/beaker/Labs_logo_dark_mode_1x.png\" alt=\"...\">",
+            "after": "<img src=\"https://www.gstatic.com/search-labs/beaker/Labs_logo_dark_mode_1x.png\" alt=\"...\" width=\"800\" height=\"600\">"
+          },
+          "resources": [
+            "https://web.dev/cls/"
+          ]
+        },
+        {
+          "id": "5d212bad-adf2-4c9a-838b-213fce15ba86",
+          "type": "performance",
+          "severity": "low",
+          "title": "Image Missing Dimensions",
+          "description": "Image lacks width/height attributes, which can cause layout shifts.",
+          "location": "header#gb > div.gb_Kd.gb_Nd > div.gb_2d.gb_wb > div.gb_Cd > div.gb_z.gb_vd > div.gb_D.gb_vb > a.gb_B.gb_0a > span.gb_be > img.gb_Q.gbii",
+          "element": "<img class=\"gb_Q gbii\" src=\"https://lh3.google.com/u/0/ogw/AF2bZyiNb5p86e0hwISzbw7UAtkNBBvZ8AcnzJZKVHbX2Ey5WA=s32-c-mo\" srcset=\"https://lh3.google.com/u/0/ogw/AF2bZyiNb5p86e0hwISzbw7UAtkNBBvZ8AcnzJZKVHbX2Ey5WA=s32-c-mo 1x, https://lh3.google.com/u/0/ogw/AF2bZyiNb5p86e0hwISzbw7UAtkNBBvZ8AcnzJZKVHbX2Ey5WA=s64-c-mo 2x \" alt=\"\" aria-hidden=\"true\" data-noaft=\"\">",
+          "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+          "codeSnippet": {
+            "before": "<img src=\"https://lh3.google.com/u/0/ogw/AF2bZyiNb5p86e0hwISzbw7UAtkNBBvZ8AcnzJZKVHbX2Ey5WA=s32-c-mo\" alt=\"...\">",
+            "after": "<img src=\"https://lh3.google.com/u/0/ogw/AF2bZyiNb5p86e0hwISzbw7UAtkNBBvZ8AcnzJZKVHbX2Ey5WA=s32-c-mo\" alt=\"...\" width=\"800\" height=\"600\">"
+          },
+          "resources": [
+            "https://web.dev/cls/"
+          ]
+        },
+        {
+          "id": "1636e0c3-1c64-46d9-a8f3-864aca59947a",
+          "type": "performance",
+          "severity": "low",
+          "title": "Image Missing Dimensions",
+          "description": "Image lacks width/height attributes, which can cause layout shifts.",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.aM0mz.JObZef > section.d5NbRd-gBNGNe.DvBau > img.DvBau",
+          "element": "<img src=\"https://www.gstatic.com/search-labs/2ed7270e-629a-45a3-9da2-a2fe00ad1898.jpg\" alt=\"\" class=\"DvBau\">",
+          "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+          "codeSnippet": {
+            "before": "<img src=\"https://www.gstatic.com/search-labs/2ed7270e-629a-45a3-9da2-a2fe00ad1898.jpg\" alt=\"...\">",
+            "after": "<img src=\"https://www.gstatic.com/search-labs/2ed7270e-629a-45a3-9da2-a2fe00ad1898.jpg\" alt=\"...\" width=\"800\" height=\"600\">"
+          },
+          "resources": [
+            "https://web.dev/cls/"
+          ]
+        },
+        {
+          "id": "a9384093-e4a2-48b3-a319-6b1e0cea23a3",
+          "type": "performance",
+          "severity": "low",
+          "title": "Image Missing Dimensions",
+          "description": "Image lacks width/height attributes, which can cause layout shifts.",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO.szcgid > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+          "element": "<img src=\"https://www.gstatic.com/search-labs/5181e3f5-a5f5-4eb1-a09a-3dce0cb560e0.png\" alt=\"\" class=\"SDZEi\">",
+          "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+          "codeSnippet": {
+            "before": "<img src=\"https://www.gstatic.com/search-labs/5181e3f5-a5f5-4eb1-a09a-3dce0cb560e0.png\" alt=\"...\">",
+            "after": "<img src=\"https://www.gstatic.com/search-labs/5181e3f5-a5f5-4eb1-a09a-3dce0cb560e0.png\" alt=\"...\" width=\"800\" height=\"600\">"
+          },
+          "resources": [
+            "https://web.dev/cls/"
+          ]
+        },
+        {
+          "id": "1639810e-f770-4c30-b4f5-62c914a6f436",
+          "type": "performance",
+          "severity": "low",
+          "title": "Image Missing Dimensions",
+          "description": "Image lacks width/height attributes, which can cause layout shifts.",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO.szcgid > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+          "element": "<img src=\"https://www.gstatic.com/search-labs/11bbecb4-7a49-41cb-9f02-762ddd745628.png\" alt=\"\" class=\"SDZEi\">",
+          "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+          "codeSnippet": {
+            "before": "<img src=\"https://www.gstatic.com/search-labs/11bbecb4-7a49-41cb-9f02-762ddd745628.png\" alt=\"...\">",
+            "after": "<img src=\"https://www.gstatic.com/search-labs/11bbecb4-7a49-41cb-9f02-762ddd745628.png\" alt=\"...\" width=\"800\" height=\"600\">"
+          },
+          "resources": [
+            "https://web.dev/cls/"
+          ]
+        },
+        {
+          "id": "f7cdad6d-584a-4352-93aa-b9b5a292004c",
+          "type": "performance",
+          "severity": "low",
+          "title": "Image Missing Dimensions",
+          "description": "Image lacks width/height attributes, which can cause layout shifts.",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+          "element": "<img src=\"https://www.gstatic.com/search-labs/a40255f7-6c52-4ea8-bc93-50a9a7dd83de.png\" alt=\"\" class=\"SDZEi\">",
+          "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+          "codeSnippet": {
+            "before": "<img src=\"https://www.gstatic.com/search-labs/a40255f7-6c52-4ea8-bc93-50a9a7dd83de.png\" alt=\"...\">",
+            "after": "<img src=\"https://www.gstatic.com/search-labs/a40255f7-6c52-4ea8-bc93-50a9a7dd83de.png\" alt=\"...\" width=\"800\" height=\"600\">"
+          },
+          "resources": [
+            "https://web.dev/cls/"
+          ]
+        },
+        {
+          "id": "65c52a66-cb10-44ed-951b-d16bb3a67c2f",
+          "type": "performance",
+          "severity": "low",
+          "title": "Image Missing Dimensions",
+          "description": "Image lacks width/height attributes, which can cause layout shifts.",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.oGEs5 > section.d5NbRd-gBNGNe.wCKe1d > img.wCKe1d",
+          "element": "<img src=\"https://www.gstatic.com/search-labs/db4f78ea-3bda-4c6b-971d-cfea7e9af409.png\" alt=\"\" class=\"wCKe1d\" data-iml=\"1298.5\">",
+          "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+          "codeSnippet": {
+            "before": "<img src=\"https://www.gstatic.com/search-labs/db4f78ea-3bda-4c6b-971d-cfea7e9af409.png\" alt=\"...\">",
+            "after": "<img src=\"https://www.gstatic.com/search-labs/db4f78ea-3bda-4c6b-971d-cfea7e9af409.png\" alt=\"...\" width=\"800\" height=\"600\">"
+          },
+          "resources": [
+            "https://web.dev/cls/"
+          ]
+        },
+        {
+          "id": "6a9858a7-bba2-486d-b5f4-8cad924d2f85",
+          "type": "performance",
+          "severity": "low",
+          "title": "Image Missing Dimensions",
+          "description": "Image lacks width/height attributes, which can cause layout shifts.",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+          "element": "<img src=\"https://www.gstatic.com/search-labs/9bbb3ab7-1572-4999-8ea1-2ea42e9d42d8.png\" alt=\"\" class=\"SDZEi\">",
+          "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+          "codeSnippet": {
+            "before": "<img src=\"https://www.gstatic.com/search-labs/9bbb3ab7-1572-4999-8ea1-2ea42e9d42d8.png\" alt=\"...\">",
+            "after": "<img src=\"https://www.gstatic.com/search-labs/9bbb3ab7-1572-4999-8ea1-2ea42e9d42d8.png\" alt=\"...\" width=\"800\" height=\"600\">"
+          },
+          "resources": [
+            "https://web.dev/cls/"
+          ]
+        },
+        {
+          "id": "4ab5ee76-573d-4a48-9e09-233dd6f5f84c",
+          "type": "performance",
+          "severity": "low",
+          "title": "Image Missing Dimensions",
+          "description": "Image lacks width/height attributes, which can cause layout shifts.",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.oGEs5 > section.d5NbRd-gBNGNe.wCKe1d > img.wCKe1d",
+          "element": "<img src=\"https://www.gstatic.com/search-labs/0962464a-34eb-43e9-ad93-f23c28ac37e6.png\" alt=\"\" class=\"wCKe1d\" data-iml=\"1251.800000000745\">",
+          "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+          "codeSnippet": {
+            "before": "<img src=\"https://www.gstatic.com/search-labs/0962464a-34eb-43e9-ad93-f23c28ac37e6.png\" alt=\"...\">",
+            "after": "<img src=\"https://www.gstatic.com/search-labs/0962464a-34eb-43e9-ad93-f23c28ac37e6.png\" alt=\"...\" width=\"800\" height=\"600\">"
+          },
+          "resources": [
+            "https://web.dev/cls/"
+          ]
+        },
+        {
+          "id": "50e8bdda-c003-4d12-a79e-11df28d8988b",
+          "type": "performance",
+          "severity": "low",
+          "title": "Image Missing Dimensions",
+          "description": "Image lacks width/height attributes, which can cause layout shifts.",
+          "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+          "element": "<img src=\"https://www.gstatic.com/search-labs/9bbb3ab7-1572-4999-8ea1-2ea42e9d42d8.png\" alt=\"\" class=\"SDZEi\">",
+          "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+          "codeSnippet": {
+            "before": "<img src=\"https://www.gstatic.com/search-labs/9bbb3ab7-1572-4999-8ea1-2ea42e9d42d8.png\" alt=\"...\">",
+            "after": "<img src=\"https://www.gstatic.com/search-labs/9bbb3ab7-1572-4999-8ea1-2ea42e9d42d8.png\" alt=\"...\" width=\"800\" height=\"600\">"
+          },
+          "resources": [
+            "https://web.dev/cls/"
+          ]
+        },
+        {
+          "id": "4b9bdc78-df7d-4c8a-a12f-b51fc961fbd6",
+          "type": "performance",
+          "severity": "medium",
+          "title": "Images Not Using Lazy Loading",
+          "description": "7 below-the-fold images are not using lazy loading.",
+          "location": "body",
+          "suggestion": "Add loading=\"lazy\" attribute to images that appear below the fold.",
+          "codeSnippet": {
+            "before": "<img src=\"image.jpg\" alt=\"...\">",
+            "after": "<img src=\"image.jpg\" alt=\"...\" loading=\"lazy\">"
+          },
+          "resources": [
+            "https://web.dev/lazy-loading/"
+          ]
+        },
+        {
+          "id": "cfc5bdb9-1103-4611-a31d-db37043f979c",
+          "type": "performance",
+          "severity": "high",
+          "title": "Render-Blocking JavaScript in Head",
+          "description": "Found 11 synchronous scripts in <head> that block rendering.",
+          "location": "<head>",
+          "suggestion": "Add async or defer attributes to script tags, or move scripts to the end of <body>.",
+          "codeSnippet": {
+            "before": "<script src=\"script.js\"></script>",
+            "after": "<script src=\"script.js\" defer></script>"
+          },
+          "resources": [
+            "https://web.dev/efficiently-load-third-party-javascript/"
+          ]
+        }
+      ],
+      "duration": 2,
+      "timestamp": "2026-02-01T11:19:28.444Z"
+    },
+    {
+      "testType": "responsive",
+      "passed": true,
+      "totalChecks": 10,
+      "passedChecks": 10,
+      "failedChecks": 0,
+      "issues": [],
+      "duration": 2,
+      "timestamp": "2026-02-01T11:19:28.446Z"
+    },
+    {
+      "testType": "console",
+      "passed": true,
+      "totalChecks": 1,
+      "passedChecks": 1,
+      "failedChecks": 0,
+      "issues": [],
+      "duration": 0,
+      "timestamp": "2026-02-01T11:19:28.446Z"
+    },
+    {
+      "testType": "security",
+      "passed": true,
+      "totalChecks": 10,
+      "passedChecks": 10,
+      "failedChecks": 0,
+      "issues": [],
+      "duration": 0,
+      "timestamp": "2026-02-01T11:19:28.447Z"
+    },
+    {
+      "testType": "images",
+      "passed": true,
+      "totalChecks": 10,
+      "passedChecks": 10,
+      "failedChecks": 0,
+      "issues": [],
+      "duration": 0,
+      "timestamp": "2026-02-01T11:19:28.447Z"
+    },
+    {
+      "testType": "forms",
+      "passed": true,
+      "totalChecks": 10,
+      "passedChecks": 10,
+      "failedChecks": 0,
+      "issues": [],
+      "duration": 0,
+      "timestamp": "2026-02-01T11:19:28.447Z"
+    }
+  ],
+  "allIssues": [
+    {
+      "id": "34208fbf-d637-406d-b147-2e932efcf7c8",
+      "type": "best-practice",
+      "severity": "low",
+      "title": "Button Missing Type Attribute",
+      "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.aM0mz.JObZef > div.Oa5HGc > div.Hgpnmd > button.IfuKke.ZkFQ1d",
+      "element": "<button class=\"IfuKke  ZkFQ1d\" aria-label=\"Turn on AI Mode\" jsaction=\"click:sSBPhc\" jslog=\"226495; track:click,impression; metadata:W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWyIyMiIsIk1lZXQlMjBBSSUyME1vZGUlM0ElMjBhJTIwd2hvbGUlMjBuZXclMjB3YXklMjB0byUyMHNlYXJjaCIsIklOX0FQUF9OQVZJR0FUSU9OX0NPTU1BTkQiLCIvc2VhcmNoL2V4cGVyaW1lbnQvMjI_YWU9dHJ1ZSZlZXA9aGVwciJdXQ==;\">Turn on</button>",
+      "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+      "codeSnippet": {
+        "before": "<button>Click</button>",
+        "after": "<button type=\"button\">Click</button>"
+      }
+    },
+    {
+      "id": "a0401397-529b-4035-8535-7a1c56a2878f",
+      "type": "best-practice",
+      "severity": "low",
+      "title": "Button Missing Type Attribute",
+      "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO.szcgid > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.VfPpkd-dgl2Hf-ppHlrf-sM5MNb > button.AeBiU-LgbsSe.AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc",
+      "element": "<button class=\"AeBiU-LgbsSe AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc AeBiU-LgbsSe-OWXEXe-dgl2Hf AeBiU-kSE8rc-FoKg4d-sLO9V-YoZ4jf undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jscontroller=\"O626Fe\" jsaction=\"click:h5M12e;clickmod:h5M12e;pointerdown:FEiYhc;pointerup:mF5Elf;pointerenter:EX0mI;pointerleave:vpvbp;pointercancel:xyn4sd;contextmenu:xexox; focus:h06R8; blur:zjh6rb;mlnRJb:fLiPzd;\" data-idom-class=\"undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jsname=\"rhHFf\" aria-label=\"Feedback for AI Mode\" jslog=\"179258; track:click; metadata:W1siMjIiXV0=\"><span class=\"XjoK4b\"></span><span class=\"UTNHae\" jscontroller=\"LBaJxb\" jsname=\"m9ZlFb\"></span><span class=\"AeBiU-RLmnJb\"></span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-M1Soyc\" jsname=\"Xr1QTb\"><i class=\"google-material-icons notranslate VfPpkd-kBDsod google-symbols\" aria-hidden=\"true\">rate_review</i></span><span jsname=\"V67aGc\" class=\"AeBiU-vQzf8d\" aria-hidden=\"true\">Feedback</span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-UbuQg\" jsname=\"UkTUqb\"></span></button>",
+      "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+      "codeSnippet": {
+        "before": "<button>Click</button>",
+        "after": "<button type=\"button\">Click</button>"
+      }
+    },
+    {
+      "id": "7c50c605-0cec-4153-9044-3d61d83d0d61",
+      "type": "best-practice",
+      "severity": "low",
+      "title": "Button Missing Type Attribute",
+      "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO.szcgid > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.CNMj4c > button.hXXdee.kPTQic",
+      "element": "<button class=\"hXXdee kPTQic\" aria-label=\"Turn on AI Mode\" jsname=\"LgbsSe\" jsaction=\"animationend:hdXq8d(kgzUNd)\"><div class=\"EOYSYc\" jsname=\"kgzUNd\"><div class=\"wKKiqd\"></div></div><div class=\"Tm5o9e\"><div class=\"M0FLac\" jsname=\"V67aGc\">Turn on</div></div></button>",
+      "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+      "codeSnippet": {
+        "before": "<button>Click</button>",
+        "after": "<button type=\"button\">Click</button>"
+      }
+    },
+    {
+      "id": "e6240b4c-8efb-454f-96a5-bc9245f789d5",
+      "type": "best-practice",
+      "severity": "low",
+      "title": "Button Missing Type Attribute",
+      "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO.szcgid > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.VfPpkd-dgl2Hf-ppHlrf-sM5MNb > button.AeBiU-LgbsSe.AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc",
+      "element": "<button class=\"AeBiU-LgbsSe AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc AeBiU-LgbsSe-OWXEXe-dgl2Hf AeBiU-kSE8rc-FoKg4d-sLO9V-YoZ4jf undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jscontroller=\"O626Fe\" jsaction=\"click:h5M12e;clickmod:h5M12e;pointerdown:FEiYhc;pointerup:mF5Elf;pointerenter:EX0mI;pointerleave:vpvbp;pointercancel:xyn4sd;contextmenu:xexox; focus:h06R8; blur:zjh6rb;mlnRJb:fLiPzd;\" data-idom-class=\"undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jsname=\"rhHFf\" aria-label=\"Feedback for Google app for Windows\" jslog=\"179258; track:click; metadata:W1siNDAiXV0=\"><span class=\"XjoK4b\"></span><span class=\"UTNHae\" jscontroller=\"LBaJxb\" jsname=\"m9ZlFb\"></span><span class=\"AeBiU-RLmnJb\"></span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-M1Soyc\" jsname=\"Xr1QTb\"><i class=\"google-material-icons notranslate VfPpkd-kBDsod google-symbols\" aria-hidden=\"true\">rate_review</i></span><span jsname=\"V67aGc\" class=\"AeBiU-vQzf8d\" aria-hidden=\"true\">Feedback</span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-UbuQg\" jsname=\"UkTUqb\"></span></button>",
+      "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+      "codeSnippet": {
+        "before": "<button>Click</button>",
+        "after": "<button type=\"button\">Click</button>"
+      }
+    },
+    {
+      "id": "569a07b3-480c-4777-9514-5c99d72a1047",
+      "type": "best-practice",
+      "severity": "low",
+      "title": "Button Missing Type Attribute",
+      "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO.szcgid > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.CNMj4c > button.hXXdee.kPTQic",
+      "element": "<button class=\"hXXdee kPTQic\" aria-label=\"Download the Google app for Windows\" jsname=\"LgbsSe\" jsaction=\"animationend:hdXq8d(kgzUNd)\" role=\"link\"><div class=\"EOYSYc\" jsname=\"kgzUNd\"><div class=\"wKKiqd\"></div></div><div class=\"Tm5o9e\"><div class=\"M0FLac\" jsname=\"V67aGc\">Download app</div></div></button>",
+      "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+      "codeSnippet": {
+        "before": "<button>Click</button>",
+        "after": "<button type=\"button\">Click</button>"
+      }
+    },
+    {
+      "id": "53fc738d-228a-4fab-abea-fd35495cc4b9",
+      "type": "best-practice",
+      "severity": "low",
+      "title": "Button Missing Type Attribute",
+      "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.VfPpkd-dgl2Hf-ppHlrf-sM5MNb > button.AeBiU-LgbsSe.AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc",
+      "element": "<button class=\"AeBiU-LgbsSe AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc AeBiU-LgbsSe-OWXEXe-dgl2Hf AeBiU-kSE8rc-FoKg4d-sLO9V-YoZ4jf undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jscontroller=\"O626Fe\" jsaction=\"click:h5M12e;clickmod:h5M12e;pointerdown:FEiYhc;pointerup:mF5Elf;pointerenter:EX0mI;pointerleave:vpvbp;pointercancel:xyn4sd;contextmenu:xexox; focus:h06R8; blur:zjh6rb;mlnRJb:fLiPzd;\" data-idom-class=\"undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jsname=\"rhHFf\" aria-label=\"Feedback for NotebookLM\" jslog=\"179258; track:click; metadata:W1siMjMiXV0=\"><span class=\"XjoK4b\"></span><span class=\"UTNHae\" jscontroller=\"LBaJxb\" jsname=\"m9ZlFb\"></span><span class=\"AeBiU-RLmnJb\"></span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-M1Soyc\" jsname=\"Xr1QTb\"><i class=\"google-material-icons notranslate VfPpkd-kBDsod google-symbols\" aria-hidden=\"true\">rate_review</i></span><span jsname=\"V67aGc\" class=\"AeBiU-vQzf8d\" aria-hidden=\"true\">Feedback</span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-UbuQg\" jsname=\"UkTUqb\"></span></button>",
+      "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+      "codeSnippet": {
+        "before": "<button>Click</button>",
+        "after": "<button type=\"button\">Click</button>"
+      }
+    },
+    {
+      "id": "59f1051c-94b7-4d4a-890d-6cc64440f0d3",
+      "type": "best-practice",
+      "severity": "low",
+      "title": "Button Missing Type Attribute",
+      "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.CNMj4c > button.hXXdee.kPTQic",
+      "element": "<button class=\"hXXdee kPTQic\" aria-label=\"Try now\" jsname=\"LgbsSe\" jsaction=\"animationend:hdXq8d(kgzUNd)\" role=\"link\"><div class=\"EOYSYc\" jsname=\"kgzUNd\"><div class=\"wKKiqd\"></div></div><div class=\"Tm5o9e\"><div class=\"M0FLac\" jsname=\"V67aGc\">Try now</div></div></button>",
+      "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+      "codeSnippet": {
+        "before": "<button>Click</button>",
+        "after": "<button type=\"button\">Click</button>"
+      }
+    },
+    {
+      "id": "897708c6-35f9-4844-bfba-5f00926de116",
+      "type": "best-practice",
+      "severity": "low",
+      "title": "Button Missing Type Attribute",
+      "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.VfPpkd-dgl2Hf-ppHlrf-sM5MNb > button.AeBiU-LgbsSe.AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc",
+      "element": "<button class=\"AeBiU-LgbsSe AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc AeBiU-LgbsSe-OWXEXe-dgl2Hf AeBiU-kSE8rc-FoKg4d-sLO9V-YoZ4jf undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jscontroller=\"O626Fe\" jsaction=\"click:h5M12e;clickmod:h5M12e;pointerdown:FEiYhc;pointerup:mF5Elf;pointerenter:EX0mI;pointerleave:vpvbp;pointercancel:xyn4sd;contextmenu:xexox; focus:h06R8; blur:zjh6rb;mlnRJb:fLiPzd;\" data-idom-class=\"undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jsname=\"rhHFf\" aria-label=\"Feedback for Viola the Bird\" jslog=\"179258; track:click; metadata:W1siMTMiXV0=\"><span class=\"XjoK4b\"></span><span class=\"UTNHae\" jscontroller=\"LBaJxb\" jsname=\"m9ZlFb\"></span><span class=\"AeBiU-RLmnJb\"></span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-M1Soyc\" jsname=\"Xr1QTb\"><i class=\"google-material-icons notranslate VfPpkd-kBDsod google-symbols\" aria-hidden=\"true\">rate_review</i></span><span jsname=\"V67aGc\" class=\"AeBiU-vQzf8d\" aria-hidden=\"true\">Feedback</span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-UbuQg\" jsname=\"UkTUqb\"></span></button>",
+      "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+      "codeSnippet": {
+        "before": "<button>Click</button>",
+        "after": "<button type=\"button\">Click</button>"
+      }
+    },
+    {
+      "id": "f8e743b9-010f-4f7b-b0d4-91b26133c435",
+      "type": "best-practice",
+      "severity": "low",
+      "title": "Button Missing Type Attribute",
+      "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.CNMj4c > button.hXXdee.kPTQic",
+      "element": "<button class=\"hXXdee kPTQic\" aria-label=\"Play with Viola the Bird\" jsname=\"LgbsSe\" jsaction=\"animationend:hdXq8d(kgzUNd)\" role=\"link\"><div class=\"EOYSYc\" jsname=\"kgzUNd\"><div class=\"wKKiqd\"></div></div><div class=\"Tm5o9e\"><div class=\"M0FLac\" jsname=\"V67aGc\">Play</div></div></button>",
+      "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+      "codeSnippet": {
+        "before": "<button>Click</button>",
+        "after": "<button type=\"button\">Click</button>"
+      }
+    },
+    {
+      "id": "d9273309-74f5-498b-8e8e-76935b0d6543",
+      "type": "best-practice",
+      "severity": "low",
+      "title": "Button Missing Type Attribute",
+      "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.VfPpkd-dgl2Hf-ppHlrf-sM5MNb > button.AeBiU-LgbsSe.AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc",
+      "element": "<button class=\"AeBiU-LgbsSe AeBiU-LgbsSe-OWXEXe-Bz112c-M1Soyc AeBiU-LgbsSe-OWXEXe-dgl2Hf AeBiU-kSE8rc-FoKg4d-sLO9V-YoZ4jf undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jscontroller=\"O626Fe\" jsaction=\"click:h5M12e;clickmod:h5M12e;pointerdown:FEiYhc;pointerup:mF5Elf;pointerenter:EX0mI;pointerleave:vpvbp;pointercancel:xyn4sd;contextmenu:xexox; focus:h06R8; blur:zjh6rb;mlnRJb:fLiPzd;\" data-idom-class=\"undefined dPlSnc PbjrJ PrAS0b FB7LUb\" jsname=\"rhHFf\" aria-label=\"Feedback for Hindi Cinema\" jslog=\"179258; track:click; metadata:W1siMTUiXV0=\"><span class=\"XjoK4b\"></span><span class=\"UTNHae\" jscontroller=\"LBaJxb\" jsname=\"m9ZlFb\"></span><span class=\"AeBiU-RLmnJb\"></span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-M1Soyc\" jsname=\"Xr1QTb\"><i class=\"google-material-icons notranslate VfPpkd-kBDsod google-symbols\" aria-hidden=\"true\">rate_review</i></span><span jsname=\"V67aGc\" class=\"AeBiU-vQzf8d\" aria-hidden=\"true\">Feedback</span><span class=\"AeBiU-kBDsod-Rtc0Jf AeBiU-kBDsod-Rtc0Jf-OWXEXe-UbuQg\" jsname=\"UkTUqb\"></span></button>",
+      "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+      "codeSnippet": {
+        "before": "<button>Click</button>",
+        "after": "<button type=\"button\">Click</button>"
+      }
+    },
+    {
+      "id": "05a583b9-9edc-4008-adb9-b695c6950526",
+      "type": "best-practice",
+      "severity": "low",
+      "title": "Button Missing Type Attribute",
+      "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.TSG6H.Fdr9De > div.CNMj4c > button.hXXdee.kPTQic",
+      "element": "<button class=\"hXXdee kPTQic\" aria-label=\"Explore Hindi Cinema\" jsname=\"LgbsSe\" jsaction=\"animationend:hdXq8d(kgzUNd)\" role=\"link\"><div class=\"EOYSYc\" jsname=\"kgzUNd\"><div class=\"wKKiqd\"></div></div><div class=\"Tm5o9e\"><div class=\"M0FLac\" jsname=\"V67aGc\">Explore</div></div></button>",
+      "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+      "codeSnippet": {
+        "before": "<button>Click</button>",
+        "after": "<button type=\"button\">Click</button>"
+      }
+    },
+    {
+      "id": "1c7443a8-24e6-43e0-b277-22577324a551",
+      "type": "best-practice",
+      "severity": "low",
+      "title": "Button Missing Type Attribute",
+      "description": "Button element lacks explicit type attribute (defaults to \"submit\").",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.DgfZ4e > div.ORsxQb > div.jIFBle > div.VfPpkd-dgl2Hf-ppHlrf-sM5MNb > button.UywwFc-LgbsSe.UywwFc-LgbsSe-OWXEXe-dgl2Hf",
+      "element": "<button class=\"UywwFc-LgbsSe UywwFc-LgbsSe-OWXEXe-dgl2Hf UywwFc-StrnGf-YYd4I-VtOx3e UywwFc-kSE8rc-FoKg4d-sLO9V-YoZ4jf undefined jnfNDf EiZ8Dd FB7LUb\" jscontroller=\"O626Fe\" jsaction=\"click:h5M12e;clickmod:h5M12e;pointerdown:FEiYhc;pointerup:mF5Elf;pointerenter:EX0mI;pointerleave:vpvbp;pointercancel:xyn4sd;contextmenu:xexox; focus:h06R8; blur:zjh6rb;mlnRJb:fLiPzd;\" data-idom-class=\"undefined jnfNDf EiZ8Dd FB7LUb\" jsname=\"AUDZO\" aria-label=\"Get email updates\"><span class=\"XjoK4b\"></span><span class=\"MMvswb\"><span class=\"OLCwg\"></span></span><span class=\"UTNHae\" jscontroller=\"LBaJxb\" jsname=\"m9ZlFb\" soy-skip=\"\" ssk=\"6:RWVI5c\"></span><span class=\"UywwFc-RLmnJb\"></span><span class=\"UywwFc-kBDsod-Rtc0Jf UywwFc-kBDsod-Rtc0Jf-OWXEXe-M1Soyc\" jsname=\"Xr1QTb\"></span><span jsname=\"V67aGc\" class=\"UywwFc-vQzf8d\" aria-hidden=\"true\">Get updates</span><span class=\"UywwFc-kBDsod-Rtc0Jf UywwFc-kBDsod-Rtc0Jf-OWXEXe-UbuQg\" jsname=\"UkTUqb\"></span></button>",
+      "suggestion": "Add type=\"button\", type=\"submit\", or type=\"reset\" to be explicit.",
+      "codeSnippet": {
+        "before": "<button>Click</button>",
+        "after": "<button type=\"button\">Click</button>"
+      }
+    },
+    {
+      "id": "00c07ccd-c554-4c96-9159-8ed54ba3e233",
+      "type": "seo",
+      "severity": "high",
+      "title": "Missing Meta Description",
+      "description": "No meta description found. This affects how your page appears in search results.",
+      "location": "<head>",
+      "suggestion": "Add a meta description tag in the `<head>` section of your HTML. This should be a concise summary of the page content, ideally between 150-160 characters. Example: `<meta name=\"description\" content=\"Your summary here.\" />`",
+      "codeSnippet": {
+        "before": "<head>\n  <title>Page Title</title>",
+        "after": "<head>\n  <title>Page Title</title>\n  <meta name=\"description\" content=\"A compelling description of your page content.\">"
+      },
+      "resources": [
+        "https://moz.com/learn/seo/meta-description",
+        "✨ AI-Enhanced Fix"
+      ]
+    },
+    {
+      "id": "5bf48e69-5489-484f-a67c-9253f72c07e1",
+      "type": "seo",
+      "severity": "high",
+      "title": "Missing H1 Heading",
+      "description": "No H1 heading found on the page. Every page should have exactly one H1.",
+      "location": "body",
+      "suggestion": "Include a single H1 heading within the `<body>` of your webpage. This should clearly describe the main topic of the page, using relevant keywords. Example: `<h1>Main Topic of the Page</h1>`",
+      "codeSnippet": {
+        "before": "<body>\n  <h2>Some content</h2>",
+        "after": "<body>\n  <h1>Main Page Heading</h1>\n  <h2>Some content</h2>"
+      },
+      "resources": [
+        "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements",
+        "✨ AI-Enhanced Fix"
+      ]
+    },
+    {
+      "id": "3c539b60-662c-4523-8090-61b853ef7c6f",
+      "type": "seo",
+      "severity": "low",
+      "title": "Image Has Empty Alt Text",
+      "description": "Image has empty alt text. Verify if this is truly decorative.",
+      "location": "header#gb > div.gb_Kd.gb_Nd > div.gb_2d.gb_wb > div.gb_Cd > div.gb_z.gb_vd > div.gb_D.gb_vb > a.gb_B.gb_0a > span.gb_be > img.gb_Q.gbii",
+      "element": "<img class=\"gb_Q gbii\" src=\"https://lh3.google.com/u/0/ogw/AF2bZyiNb5p86e0hwISzbw7UAtkNBBvZ8AcnzJZKVHbX2Ey5WA=s32-c-mo\" srcset=\"https://lh3.google.com/u/0/ogw/AF2bZyiNb5p86e0hwISzbw7UAtkNBBvZ8AcnzJZKVHbX2Ey5WA=s32-c-mo 1x, https://lh3.google.com/u/0/ogw/AF2bZyiNb5p86e0hwISzbw7UAtkNBBvZ8AcnzJZKVHbX2Ey5WA=s64-c-mo 2x \" alt=\"\" aria-hidden=\"true\" data-noaft=\"\">",
+      "suggestion": "If the image is decorative, consider adding role=\"presentation\". Otherwise, add descriptive alt text.",
+      "resources": [
+        "https://www.w3.org/WAI/tutorials/images/decorative/"
+      ]
+    },
+    {
+      "id": "e61b6b14-a1cc-446d-ad1e-1e30edfa2901",
+      "type": "seo",
+      "severity": "low",
+      "title": "Image Has Empty Alt Text",
+      "description": "Image has empty alt text. Verify if this is truly decorative.",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.aM0mz.JObZef > section.d5NbRd-gBNGNe.DvBau > img.DvBau",
+      "element": "<img src=\"https://www.gstatic.com/search-labs/2ed7270e-629a-45a3-9da2-a2fe00ad1898.jpg\" alt=\"\" class=\"DvBau\">",
+      "suggestion": "If the image is decorative, consider adding role=\"presentation\". Otherwise, add descriptive alt text.",
+      "resources": [
+        "https://www.w3.org/WAI/tutorials/images/decorative/"
+      ]
+    },
+    {
+      "id": "460a0e75-169d-4729-af21-5ecbcd72e3c5",
+      "type": "seo",
+      "severity": "low",
+      "title": "Image Has Empty Alt Text",
+      "description": "Image has empty alt text. Verify if this is truly decorative.",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO.szcgid > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+      "element": "<img src=\"https://www.gstatic.com/search-labs/5181e3f5-a5f5-4eb1-a09a-3dce0cb560e0.png\" alt=\"\" class=\"SDZEi\">",
+      "suggestion": "If the image is decorative, consider adding role=\"presentation\". Otherwise, add descriptive alt text.",
+      "resources": [
+        "https://www.w3.org/WAI/tutorials/images/decorative/"
+      ]
+    },
+    {
+      "id": "672ce4ff-95b6-4630-b52e-b8a0bfa515e3",
+      "type": "seo",
+      "severity": "low",
+      "title": "Image Has Empty Alt Text",
+      "description": "Image has empty alt text. Verify if this is truly decorative.",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO.szcgid > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+      "element": "<img src=\"https://www.gstatic.com/search-labs/11bbecb4-7a49-41cb-9f02-762ddd745628.png\" alt=\"\" class=\"SDZEi\">",
+      "suggestion": "If the image is decorative, consider adding role=\"presentation\". Otherwise, add descriptive alt text.",
+      "resources": [
+        "https://www.w3.org/WAI/tutorials/images/decorative/"
+      ]
+    },
+    {
+      "id": "d4320cf1-5b98-484e-b1c0-a3dbb888d4a1",
+      "type": "seo",
+      "severity": "low",
+      "title": "Image Has Empty Alt Text",
+      "description": "Image has empty alt text. Verify if this is truly decorative.",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+      "element": "<img src=\"https://www.gstatic.com/search-labs/a40255f7-6c52-4ea8-bc93-50a9a7dd83de.png\" alt=\"\" class=\"SDZEi\">",
+      "suggestion": "If the image is decorative, consider adding role=\"presentation\". Otherwise, add descriptive alt text.",
+      "resources": [
+        "https://www.w3.org/WAI/tutorials/images/decorative/"
+      ]
+    },
+    {
+      "id": "15841211-f7be-4698-9cb4-f24abb6be157",
+      "type": "seo",
+      "severity": "low",
+      "title": "Image Has Empty Alt Text",
+      "description": "Image has empty alt text. Verify if this is truly decorative.",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.oGEs5 > section.d5NbRd-gBNGNe.wCKe1d > img.wCKe1d",
+      "element": "<img src=\"https://www.gstatic.com/search-labs/db4f78ea-3bda-4c6b-971d-cfea7e9af409.png\" alt=\"\" class=\"wCKe1d\" data-iml=\"1298.5\">",
+      "suggestion": "If the image is decorative, consider adding role=\"presentation\". Otherwise, add descriptive alt text.",
+      "resources": [
+        "https://www.w3.org/WAI/tutorials/images/decorative/"
+      ]
+    },
+    {
+      "id": "b92b7aa7-7d63-4af1-af4d-a0d03e7bf4a1",
+      "type": "seo",
+      "severity": "low",
+      "title": "Image Has Empty Alt Text",
+      "description": "Image has empty alt text. Verify if this is truly decorative.",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+      "element": "<img src=\"https://www.gstatic.com/search-labs/9bbb3ab7-1572-4999-8ea1-2ea42e9d42d8.png\" alt=\"\" class=\"SDZEi\">",
+      "suggestion": "If the image is decorative, consider adding role=\"presentation\". Otherwise, add descriptive alt text.",
+      "resources": [
+        "https://www.w3.org/WAI/tutorials/images/decorative/"
+      ]
+    },
+    {
+      "id": "f4b5fa1e-2799-4f81-9b85-89cfd3f57d6e",
+      "type": "seo",
+      "severity": "low",
+      "title": "Image Has Empty Alt Text",
+      "description": "Image has empty alt text. Verify if this is truly decorative.",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.oGEs5 > section.d5NbRd-gBNGNe.wCKe1d > img.wCKe1d",
+      "element": "<img src=\"https://www.gstatic.com/search-labs/0962464a-34eb-43e9-ad93-f23c28ac37e6.png\" alt=\"\" class=\"wCKe1d\" data-iml=\"1251.800000000745\">",
+      "suggestion": "If the image is decorative, consider adding role=\"presentation\". Otherwise, add descriptive alt text.",
+      "resources": [
+        "https://www.w3.org/WAI/tutorials/images/decorative/"
+      ]
+    },
+    {
+      "id": "4887cb0e-91e6-4d02-9e14-33e13304d5c9",
+      "type": "seo",
+      "severity": "low",
+      "title": "Image Has Empty Alt Text",
+      "description": "Image has empty alt text. Verify if this is truly decorative.",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+      "element": "<img src=\"https://www.gstatic.com/search-labs/9bbb3ab7-1572-4999-8ea1-2ea42e9d42d8.png\" alt=\"\" class=\"SDZEi\">",
+      "suggestion": "If the image is decorative, consider adding role=\"presentation\". Otherwise, add descriptive alt text.",
+      "resources": [
+        "https://www.w3.org/WAI/tutorials/images/decorative/"
+      ]
+    },
+    {
+      "id": "70918ea8-6817-4383-accf-c4edabe45992",
+      "type": "seo",
+      "severity": "low",
+      "title": "Missing Open Graph Tags",
+      "description": "Missing og:title, og:description, og:image, og:url. Open Graph tags improve social media sharing.",
+      "location": "<head>",
+      "suggestion": "Add Open Graph meta tags for better social media preview when sharing.",
+      "codeSnippet": {
+        "before": "<head>",
+        "after": "<head>\n  <meta property=\"og:title\" content=\"Your Page Title\">\n  <meta property=\"og:description\" content=\"Page description\">\n  <meta property=\"og:image\" content=\"https://example.com/image.jpg\">\n  <meta property=\"og:url\" content=\"https://example.com/page\">"
+      },
+      "resources": [
+        "https://ogp.me/"
+      ]
+    },
+    {
+      "id": "5d0666e5-f8e5-456a-83c7-9772341686e4",
+      "type": "performance",
+      "severity": "low",
+      "title": "Image Missing Dimensions",
+      "description": "Image lacks width/height attributes, which can cause layout shifts.",
+      "location": "a#sdgBod > img.gb_0c",
+      "element": "<img class=\"gb_0c\" src=\"https://www.gstatic.com/search-labs/beaker/Labs_logo_dark_mode_1x.png\" srcset=\"https://www.gstatic.com/search-labs/beaker/Labs_logo_dark_mode_1x.png 1x, https://www.gstatic.com/search-labs/beaker/Labs_logo_dark_mode_2x.png 2x \" alt=\"\" aria-hidden=\"true\" role=\"presentation\" style=\"width:148px;height:24px\" data-atf=\"true\" data-iml=\"597.3000000007451\">",
+      "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+      "codeSnippet": {
+        "before": "<img src=\"https://www.gstatic.com/search-labs/beaker/Labs_logo_dark_mode_1x.png\" alt=\"...\">",
+        "after": "<img src=\"https://www.gstatic.com/search-labs/beaker/Labs_logo_dark_mode_1x.png\" alt=\"...\" width=\"800\" height=\"600\">"
+      },
+      "resources": [
+        "https://web.dev/cls/"
+      ]
+    },
+    {
+      "id": "5d212bad-adf2-4c9a-838b-213fce15ba86",
+      "type": "performance",
+      "severity": "low",
+      "title": "Image Missing Dimensions",
+      "description": "Image lacks width/height attributes, which can cause layout shifts.",
+      "location": "header#gb > div.gb_Kd.gb_Nd > div.gb_2d.gb_wb > div.gb_Cd > div.gb_z.gb_vd > div.gb_D.gb_vb > a.gb_B.gb_0a > span.gb_be > img.gb_Q.gbii",
+      "element": "<img class=\"gb_Q gbii\" src=\"https://lh3.google.com/u/0/ogw/AF2bZyiNb5p86e0hwISzbw7UAtkNBBvZ8AcnzJZKVHbX2Ey5WA=s32-c-mo\" srcset=\"https://lh3.google.com/u/0/ogw/AF2bZyiNb5p86e0hwISzbw7UAtkNBBvZ8AcnzJZKVHbX2Ey5WA=s32-c-mo 1x, https://lh3.google.com/u/0/ogw/AF2bZyiNb5p86e0hwISzbw7UAtkNBBvZ8AcnzJZKVHbX2Ey5WA=s64-c-mo 2x \" alt=\"\" aria-hidden=\"true\" data-noaft=\"\">",
+      "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+      "codeSnippet": {
+        "before": "<img src=\"https://lh3.google.com/u/0/ogw/AF2bZyiNb5p86e0hwISzbw7UAtkNBBvZ8AcnzJZKVHbX2Ey5WA=s32-c-mo\" alt=\"...\">",
+        "after": "<img src=\"https://lh3.google.com/u/0/ogw/AF2bZyiNb5p86e0hwISzbw7UAtkNBBvZ8AcnzJZKVHbX2Ey5WA=s32-c-mo\" alt=\"...\" width=\"800\" height=\"600\">"
+      },
+      "resources": [
+        "https://web.dev/cls/"
+      ]
+    },
+    {
+      "id": "1636e0c3-1c64-46d9-a8f3-864aca59947a",
+      "type": "performance",
+      "severity": "low",
+      "title": "Image Missing Dimensions",
+      "description": "Image lacks width/height attributes, which can cause layout shifts.",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.aM0mz.JObZef > section.d5NbRd-gBNGNe.DvBau > img.DvBau",
+      "element": "<img src=\"https://www.gstatic.com/search-labs/2ed7270e-629a-45a3-9da2-a2fe00ad1898.jpg\" alt=\"\" class=\"DvBau\">",
+      "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+      "codeSnippet": {
+        "before": "<img src=\"https://www.gstatic.com/search-labs/2ed7270e-629a-45a3-9da2-a2fe00ad1898.jpg\" alt=\"...\">",
+        "after": "<img src=\"https://www.gstatic.com/search-labs/2ed7270e-629a-45a3-9da2-a2fe00ad1898.jpg\" alt=\"...\" width=\"800\" height=\"600\">"
+      },
+      "resources": [
+        "https://web.dev/cls/"
+      ]
+    },
+    {
+      "id": "a9384093-e4a2-48b3-a319-6b1e0cea23a3",
+      "type": "performance",
+      "severity": "low",
+      "title": "Image Missing Dimensions",
+      "description": "Image lacks width/height attributes, which can cause layout shifts.",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO.szcgid > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+      "element": "<img src=\"https://www.gstatic.com/search-labs/5181e3f5-a5f5-4eb1-a09a-3dce0cb560e0.png\" alt=\"\" class=\"SDZEi\">",
+      "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+      "codeSnippet": {
+        "before": "<img src=\"https://www.gstatic.com/search-labs/5181e3f5-a5f5-4eb1-a09a-3dce0cb560e0.png\" alt=\"...\">",
+        "after": "<img src=\"https://www.gstatic.com/search-labs/5181e3f5-a5f5-4eb1-a09a-3dce0cb560e0.png\" alt=\"...\" width=\"800\" height=\"600\">"
+      },
+      "resources": [
+        "https://web.dev/cls/"
+      ]
+    },
+    {
+      "id": "1639810e-f770-4c30-b4f5-62c914a6f436",
+      "type": "performance",
+      "severity": "low",
+      "title": "Image Missing Dimensions",
+      "description": "Image lacks width/height attributes, which can cause layout shifts.",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO.szcgid > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+      "element": "<img src=\"https://www.gstatic.com/search-labs/11bbecb4-7a49-41cb-9f02-762ddd745628.png\" alt=\"\" class=\"SDZEi\">",
+      "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+      "codeSnippet": {
+        "before": "<img src=\"https://www.gstatic.com/search-labs/11bbecb4-7a49-41cb-9f02-762ddd745628.png\" alt=\"...\">",
+        "after": "<img src=\"https://www.gstatic.com/search-labs/11bbecb4-7a49-41cb-9f02-762ddd745628.png\" alt=\"...\" width=\"800\" height=\"600\">"
+      },
+      "resources": [
+        "https://web.dev/cls/"
+      ]
+    },
+    {
+      "id": "f7cdad6d-584a-4352-93aa-b9b5a292004c",
+      "type": "performance",
+      "severity": "low",
+      "title": "Image Missing Dimensions",
+      "description": "Image lacks width/height attributes, which can cause layout shifts.",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+      "element": "<img src=\"https://www.gstatic.com/search-labs/a40255f7-6c52-4ea8-bc93-50a9a7dd83de.png\" alt=\"\" class=\"SDZEi\">",
+      "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+      "codeSnippet": {
+        "before": "<img src=\"https://www.gstatic.com/search-labs/a40255f7-6c52-4ea8-bc93-50a9a7dd83de.png\" alt=\"...\">",
+        "after": "<img src=\"https://www.gstatic.com/search-labs/a40255f7-6c52-4ea8-bc93-50a9a7dd83de.png\" alt=\"...\" width=\"800\" height=\"600\">"
+      },
+      "resources": [
+        "https://web.dev/cls/"
+      ]
+    },
+    {
+      "id": "65c52a66-cb10-44ed-951b-d16bb3a67c2f",
+      "type": "performance",
+      "severity": "low",
+      "title": "Image Missing Dimensions",
+      "description": "Image lacks width/height attributes, which can cause layout shifts.",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.oGEs5 > section.d5NbRd-gBNGNe.wCKe1d > img.wCKe1d",
+      "element": "<img src=\"https://www.gstatic.com/search-labs/db4f78ea-3bda-4c6b-971d-cfea7e9af409.png\" alt=\"\" class=\"wCKe1d\" data-iml=\"1298.5\">",
+      "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+      "codeSnippet": {
+        "before": "<img src=\"https://www.gstatic.com/search-labs/db4f78ea-3bda-4c6b-971d-cfea7e9af409.png\" alt=\"...\">",
+        "after": "<img src=\"https://www.gstatic.com/search-labs/db4f78ea-3bda-4c6b-971d-cfea7e9af409.png\" alt=\"...\" width=\"800\" height=\"600\">"
+      },
+      "resources": [
+        "https://web.dev/cls/"
+      ]
+    },
+    {
+      "id": "6a9858a7-bba2-486d-b5f4-8cad924d2f85",
+      "type": "performance",
+      "severity": "low",
+      "title": "Image Missing Dimensions",
+      "description": "Image lacks width/height attributes, which can cause layout shifts.",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+      "element": "<img src=\"https://www.gstatic.com/search-labs/9bbb3ab7-1572-4999-8ea1-2ea42e9d42d8.png\" alt=\"\" class=\"SDZEi\">",
+      "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+      "codeSnippet": {
+        "before": "<img src=\"https://www.gstatic.com/search-labs/9bbb3ab7-1572-4999-8ea1-2ea42e9d42d8.png\" alt=\"...\">",
+        "after": "<img src=\"https://www.gstatic.com/search-labs/9bbb3ab7-1572-4999-8ea1-2ea42e9d42d8.png\" alt=\"...\" width=\"800\" height=\"600\">"
+      },
+      "resources": [
+        "https://web.dev/cls/"
+      ]
+    },
+    {
+      "id": "4ab5ee76-573d-4a48-9e09-233dd6f5f84c",
+      "type": "performance",
+      "severity": "low",
+      "title": "Image Missing Dimensions",
+      "description": "Image lacks width/height attributes, which can cause layout shifts.",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.oGEs5 > section.d5NbRd-gBNGNe.wCKe1d > img.wCKe1d",
+      "element": "<img src=\"https://www.gstatic.com/search-labs/0962464a-34eb-43e9-ad93-f23c28ac37e6.png\" alt=\"\" class=\"wCKe1d\" data-iml=\"1251.800000000745\">",
+      "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+      "codeSnippet": {
+        "before": "<img src=\"https://www.gstatic.com/search-labs/0962464a-34eb-43e9-ad93-f23c28ac37e6.png\" alt=\"...\">",
+        "after": "<img src=\"https://www.gstatic.com/search-labs/0962464a-34eb-43e9-ad93-f23c28ac37e6.png\" alt=\"...\" width=\"800\" height=\"600\">"
+      },
+      "resources": [
+        "https://web.dev/cls/"
+      ]
+    },
+    {
+      "id": "50e8bdda-c003-4d12-a79e-11df28d8988b",
+      "type": "performance",
+      "severity": "low",
+      "title": "Image Missing Dimensions",
+      "description": "Image lacks width/height attributes, which can cause layout shifts.",
+      "location": "body#yDmH0d > c-wiz.zQTmif.SSPGKf > div.T4LgNb > main.IshlDf.zi4hHe > div.bPZvxd.FHAMaf > div.oZRHxd > div.bDUuO > ul.qGgcab > li.Qcsw0d > div.L7v5m > div.K4vxLd-WsjYwc.QiiaPb > div.rol7Xe > div.n7v1Sc > div.FUuIqe > div.MjDldf > div.SDZEi > img.SDZEi",
+      "element": "<img src=\"https://www.gstatic.com/search-labs/9bbb3ab7-1572-4999-8ea1-2ea42e9d42d8.png\" alt=\"\" class=\"SDZEi\">",
+      "suggestion": "Add explicit width and height attributes to prevent Cumulative Layout Shift (CLS).",
+      "codeSnippet": {
+        "before": "<img src=\"https://www.gstatic.com/search-labs/9bbb3ab7-1572-4999-8ea1-2ea42e9d42d8.png\" alt=\"...\">",
+        "after": "<img src=\"https://www.gstatic.com/search-labs/9bbb3ab7-1572-4999-8ea1-2ea42e9d42d8.png\" alt=\"...\" width=\"800\" height=\"600\">"
+      },
+      "resources": [
+        "https://web.dev/cls/"
+      ]
+    },
+    {
+      "id": "4b9bdc78-df7d-4c8a-a12f-b51fc961fbd6",
+      "type": "performance",
+      "severity": "medium",
+      "title": "Images Not Using Lazy Loading",
+      "description": "7 below-the-fold images are not using lazy loading.",
+      "location": "body",
+      "suggestion": "Add loading=\"lazy\" attribute to images that appear below the fold.",
+      "codeSnippet": {
+        "before": "<img src=\"image.jpg\" alt=\"...\">",
+        "after": "<img src=\"image.jpg\" alt=\"...\" loading=\"lazy\">"
+      },
+      "resources": [
+        "https://web.dev/lazy-loading/"
+      ]
+    },
+    {
+      "id": "cfc5bdb9-1103-4611-a31d-db37043f979c",
+      "type": "performance",
+      "severity": "high",
+      "title": "Render-Blocking JavaScript in Head",
+      "description": "Found 11 synchronous scripts in <head> that block rendering.",
+      "location": "<head>",
+      "suggestion": "Move the render-blocking JavaScript files to the bottom of the `<body>` section or use the `defer` attribute in the `<script>` tags to ensure they load after the page content. This will improve page load speed and enhance user experience. Example: `<script src=\"script.js\" defer></script>`",
+      "codeSnippet": {
+        "before": "<script src=\"script.js\"></script>",
+        "after": "<script src=\"script.js\" defer></script>"
+      },
+      "resources": [
+        "https://web.dev/efficiently-load-third-party-javascript/",
+        "✨ AI-Enhanced Fix"
+      ]
+    }
+  ],
+  "summary": {
+    "totalIssues": 36,
+    "criticalCount": 0,
+    "highCount": 3,
+    "mediumCount": 1,
+    "lowCount": 32,
+    "infoCount": 0
+  }
+}

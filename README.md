@@ -1,50 +1,152 @@
-# Visual QA Agent
+# 🤖 Visual QA Agent (Multi-Agent System)
 
-A multimodal browser agent that autonomously verifies web application functionality using GPT-4o. The agent captures the visual state of a page (screenshot) and the DOM structure to plan and execute actions (click, type, scroll) based on natural language goals.
+A powerful, autonomous Chrome Extension that uses a **Cursor-inspired Multi-Agent Architecture** to audit web pages for bugs, accessibility issues, security vulnerabilities, and UX flaws in seconds.
 
-## Prerequisites
+![Status](https://img.shields.io/badge/Status-Beta-purple) ![Agents](https://img.shields.io/badge/Agents-6_Active-blue) ![Tech](https://img.shields.io/badge/Stack-React_Vite_TypeScript-orange)
 
-- Node.js (v18 or higher)
-- OpenAI API Key (Access to GPT-4o model required)
+---
 
-## Installation
+## 🚀 Features
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/iivanhaj/visual-qa-agent.git
-   cd visual-qa-agent
-   ```
+- **Multi-Agent Orchestration**: 5 specialized AI agents run in parallel.
+- **Real-Time Analysis**: Watch agents work live via the extension sidebar.
+- **AI-Powered Insights**: Uses GPT-4o and GPT-4 Vision to detect issues rule-based scanners miss.
+- **Comprehensive Coverage**:
+  - 🔍 **Discovery Agent**: Maps DOM structure and interactive elements.
+  - ♿ **Accessibility Agent**: WCAG 2.1 compliance + AI alt text validation.
+  - ⚡ **Performance Agent**: Core Web Vitals & resource optimization.
+  - 🔒 **Security Agent**: Vulnerability scanning (XSS, mixed content).
+  - 📱 **UX Agent**: Visual hierarchy and mobile responsiveness (Vision AI).
+- **Executive Summary**: The **Coordinator Agent** synthesizes all findings into a prioritized action plan.
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+---
 
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
+## 📊 System Architecture
 
-## Loading the Extension
+### 1. High-Level Flow
+The system uses a **Coordinator-Worker** pattern. The Coordinator Agent spawns specialized agents, manages the message bus (pub/sub), and synthesizes the final report.
 
-1. Open Chrome and navigate to `chrome://extensions`.
-2. Enable **Developer mode** in the top right corner.
+```mermaid
+graph TD
+    User[👤 User] -->|Clicks Scan| UI[💻 Extension UI]
+    UI -->|Init| QA[MultiAgentQAService]
+    QA -->|Spawn| Coord[🎯 Coordinator Agent]
+    
+    subgraph "Parallel Agent Swarm"
+        Coord -->|Dispatch| D[🔍 Discovery]
+        Coord -->|Dispatch| A[♿ Accessibility]
+        Coord -->|Dispatch| P[⚡ Performance]
+        Coord -->|Dispatch| S[🔒 Security]
+        Coord -->|Dispatch| U[📱 UX/Design]
+    end
+    
+    D -->|Findings| Bus[📨 Message Bus]
+    A -->|Findings| Bus
+    P -->|Findings| Bus
+    S -->|Findings| Bus
+    U -->|Findings| Bus
+    
+    Bus -->|Aggregated Data| Coord
+    Coord -->|Executive Summary| Report[📄 Final Report]
+    Report --> UI
+```
+
+### 2. Analysis Workflow
+
+```mermaid
+sequenceDiagram
+    participant UI as Extension UI
+    participant Coord as Coordinator
+    participant Agents as Specialized Agents
+    participant AI as OpenAI GPT-4
+    
+    UI->>Coord: Run Analysis
+    Coord->>Agents: Start Tasks (Parallel)
+    
+    par Discovery
+        Agents->>Agents: Map DOM Structure
+    and Accessibility
+        Agents->>Agents: Check WCAG Rules
+        Agents->>AI: Evaluate Alt Text
+    and UX Design
+        Agents->>AI: Analyze Screenshot (Vision)
+    end
+    
+    Agents-->>Coord: Stream Progress Update
+    Coord-->>UI: Update Progress Bar
+    
+    Agents-->>Coord: Submit Findings
+    Coord->>AI: Deduplicate & Prioritize
+    AI-->>Coord: Executive Summary
+    
+    Coord-->>UI: Complete Report
+```
+
+---
+
+## 🛠️ Installation Instructions
+
+### Option 1: Quick Install (No Coding Required)
+Use this if you just want to run the extension without setting up Node.js.
+
+1.  **Download Code:** Click **Code** > **Download ZIP** (or clone this repo).
+2.  **Unzip** the file.
+3.  **Open Chrome Extensions:**
+    *   Go to `chrome://extensions/` in your browser.
+    *   Toggle **Developer mode** (top right corner).
+4.  **Load Extension:**
+    *   Click **Load unpacked**.
+    *   Select the **`dist`** folder inside the downloaded `visual-qa-agent` folder.
+    *   ⚠️ **Note:** Make sure you select the `dist` folder, not the root folder.
+5.  **Run:** Open the extension from your toolbar and add your API Key in Settings!
+
+### Option 2: Developer Setup (Build from Source)
+Use this if you want to modify the code.
+
+### Prerequisites
+- Node.js (v16+)
+- OpenAI API Key
+
+### 1. Clone & Build
+```bash
+git clone https://github.com/yourusername/visual-qa-agent.git
+cd visual-qa-agent
+
+# Install dependencies
+npm install
+
+# Build the extension (creates /dist folder)
+npm run build
+```
+
+### 2. Load into Chrome
+1. Open Chrome and navigate to `chrome://extensions/`.
+2. Toggle **Developer mode**.
 3. Click **Load unpacked**.
-4. Select the project directory (ensure `manifest.json` is in the root).
+4. Select the **`dist`** folder.
 
-## Usage
+### 3. Setup
+1. Click the **Visual QA Agent** icon in your toolbar (or use `Alt+Shift+T`).
+2. Go to the **Settings** tab.
+3. Enter your **OpenAI API Key** and click Save.
+4. Go to **Test** tab and click **"🚀 Run Multi-Agent Scan"**.
 
-1. **Configure API Key**:
-   - Open the extension popup from the browser toolbar.
-   - Click the settings icon.
-   - Enter your OpenAI API Key and save.
+---
 
-2. **Run a Test**:
-   - Navigate to the webpage you want to test.
-   - Open the extension popup.
-   - Enter a goal in plain English (e.g., "Find the 'Sign Up' button and click it").
-   - Click **Start Agent**.
+## 🎮 Development
 
-3. **Verify Results**:
-   - The agent's progress and decisions will be logged in the popup settings panel.
-   - You can inspect the background service worker console for detailed logs.
+The project is structured as a Vite + React application.
+
+- `src/services/agents/` - Contains all agent logic.
+- `src/components/` - React UI components.
+- `manifest.json` - Chrome Extension configuration.
+
+**Adding a New Agent:**
+1. Create `src/services/agents/newAgent.ts` extending `Agent`.
+2. Implement `analyze()` method.
+3. Register in `MultiAgentQAService`.
+
+---
+
+## 📄 License
+MIT

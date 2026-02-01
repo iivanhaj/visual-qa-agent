@@ -1,0 +1,64 @@
+{
+  "../../../@crx/manifest": {
+    "file": "assets/crx-manifest.js-DxBEkc8I.js",
+    "name": "crx-manifest.js",
+    "src": "../../../@crx/manifest",
+    "isEntry": true
+  },
+  "_aiSuggestionService-D9QXck87.js": {
+    "file": "assets/aiSuggestionService-D9QXck87.js",
+    "name": "aiSuggestionService",
+    "imports": [
+      "_index-DU3xAm2I.js"
+    ]
+  },
+  "_index-DU3xAm2I.js": {
+    "file": "assets/index-DU3xAm2I.js",
+    "name": "index"
+  },
+  "_openai-CypmmGs-.js": {
+    "file": "assets/openai-CypmmGs-.js",
+    "name": "openai",
+    "imports": [
+      "_index-DU3xAm2I.js"
+    ]
+  },
+  "content.ts-loader.js": {
+    "file": "assets/content.ts-loader-DxReOCsI.js",
+    "src": "content.ts-loader.js"
+  },
+  "index.html": {
+    "file": "assets/index.html-DeZ1OrdO.js",
+    "name": "index.html",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "_aiSuggestionService-D9QXck87.js",
+      "_openai-CypmmGs-.js",
+      "_index-DU3xAm2I.js"
+    ],
+    "css": [
+      "assets/index-B7sWNR-b.css"
+    ]
+  },
+  "src/background.ts": {
+    "file": "assets/background.ts-CLHDp55g.js",
+    "name": "background.ts",
+    "src": "src/background.ts",
+    "isEntry": true,
+    "imports": [
+      "_openai-CypmmGs-.js",
+      "_index-DU3xAm2I.js"
+    ]
+  },
+  "src/content.ts": {
+    "file": "assets/content.ts-qrpfv_mA.js",
+    "name": "content.ts",
+    "src": "src/content.ts",
+    "isEntry": true,
+    "imports": [
+      "_aiSuggestionService-D9QXck87.js",
+      "_index-DU3xAm2I.js"
+    ]
+  }
+}
