@@ -9,6 +9,7 @@ export class AccessibilityAgent extends Agent {
     id = 'accessibility';
     name = 'Accessibility Agent';
     emoji = '♿';
+    model = 'gpt-4o-mini';
     systemPrompt = `You are a WCAG 2.1 accessibility auditor and expert in web accessibility for users with disabilities. 
 Your role is to identify barriers that prevent people with disabilities from using websites.
 Focus on: screen reader compatibility, keyboard navigation, color contrast, ARIA attributes, and semantic HTML.

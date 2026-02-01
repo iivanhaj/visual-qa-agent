@@ -9,6 +9,7 @@ export class UXAgent extends Agent {
     id = 'ux';
     name = 'UX/Design Agent';
     emoji = '📱';
+    model = 'gpt-5-mini-2025-08-07';
     systemPrompt = `You are a senior UX designer and design systems expert.
 Your role is to evaluate user interface design, visual hierarchy, and user experience.
 Focus on: visual hierarchy, consistency, mobile responsiveness, touch targets, readability, and design patterns.

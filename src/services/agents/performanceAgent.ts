@@ -9,6 +9,7 @@ export class PerformanceAgent extends Agent {
     id = 'performance';
     name = 'Performance Agent';
     emoji = '⚡';
+    model = 'gpt-5-nano';
     systemPrompt = `You are a senior web performance engineer specializing in Core Web Vitals and optimization.
 Your role is to identify performance bottlenecks and provide actionable optimization strategies.
 Focus on: LCP, FID, CLS, resource loading, render-blocking resources, and bundle optimization.

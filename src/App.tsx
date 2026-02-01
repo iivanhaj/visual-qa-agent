@@ -100,7 +100,7 @@ function App() {
         setTimeout(() => runBugDetection(), 100);
     };
 
-    const runBugDetection = () => {
+    const runBugDetection = async () => {
         if (selectedTests.length === 0) {
             console.error('❌ No tests selected');
             setLogs(prev => [...prev, '❌ Error: Please select at least one test']);
@@ -121,70 +121,87 @@ function App() {
         }
 
         console.log('📤 Sending RUN_BUG_DETECTION message to background...');
-        chrome.runtime.sendMessage(
-            { type: 'RUN_BUG_DETECTION', tests: selectedTests },
-            (response) => {
-                console.log('📥 Response from background:', response);
-                setIsRunning(false);
 
-                if (chrome.runtime.lastError) {
-                    const error = chrome.runtime.lastError.message;
-                    console.error('❌ Chrome runtime error:', error);
-                    setLogs(prev => [...prev, `❌ Error: ${error}`]);
-                    setStatus('Error');
-                } else if (response && response.success) {
-                    console.log('✅ Bug detection complete:', response.report);
-                    setBugReport(response.report);
-                    setLogs(prev => [
-                        ...prev,
-                        `✅ Detection complete!`,
-                        `📊 Found ${response.report.summary.totalIssues} issues`,
-                        `⚡ Health Score: ${response.report.healthScore.overall}/100`
-                    ]);
-                    setStatus('Complete');
-                    setActiveTab('results');
-                } else {
-                    const error = response?.error || 'Unknown error';
-                    console.error('❌ Bug detection failed:', error);
-                    setLogs(prev => [...prev, `❌ Error: ${error}`]);
-                    setStatus('Error');
-                }
-            }
-        );
+        // Helper for running legacy scan
+        const executeLegacyScan = (tests: TestType[]): Promise<BugReport> => {
+            return new Promise((resolve, reject) => {
+                chrome.runtime.sendMessage(
+                    { type: 'RUN_BUG_DETECTION', tests },
+                    (response) => {
+                        if (chrome.runtime.lastError) {
+                            reject(chrome.runtime.lastError);
+                        } else if (response && response.success) {
+                            resolve(response.report);
+                        } else {
+                            reject(new Error(response?.error || 'Unknown error'));
+                        }
+                    }
+                );
+            });
+        };
+
+        try {
+            const report = await executeLegacyScan(selectedTests);
+            console.log('✅ Bug detection complete:', report);
+            setBugReport(report);
+            setLogs(prev => [
+                ...prev,
+                `✅ Detection complete!`,
+                `📊 Found ${report.summary.totalIssues} issues`,
+                `⚡ Health Score: ${report.healthScore.overall}/100`
+            ]);
+            setStatus('Complete');
+            setActiveTab('results');
+        } catch (error: any) {
+            const msg = error.message || String(error);
+            console.error('❌ Chrome runtime error:', msg);
+            setLogs(prev => [...prev, `❌ Error: ${msg}`]);
+            setStatus('Error');
+        } finally {
+            setIsRunning(false);
+        }
     };
 
-    // Multi-Agent Scan Function
+    // Comprehensive Scan Function (AI + Legacy)
     const runMultiAgentScan = async () => {
-        console.log('🤖 Starting Multi-Agent comprehensive scan...');
-        setLogs(['🤖 Initializing specialized AI agents...']);
-        setStatus('Running Multi-Agent Scan...');
+        console.log('🤖 Starting Comprehensive Scan (AI + Legacy)...');
+        setLogs(['🚀 Starting Comprehensive Analysis...', '🤖 Initializing specialized AI agents...', '⚡ Preparing legacy test suite...']);
+        setStatus('Running Comprehensive Scan...');
         setIsRunning(true);
         setAgentProgress({});
         setMultiAgentReport(null);
 
         try {
+            // Helper for legacy scan (defined here to access scope)
+            const executeLegacyScan = (tests: TestType[]): Promise<BugReport> => {
+                return new Promise((resolve, reject) => {
+                    chrome.runtime.sendMessage(
+                        { type: 'RUN_BUG_DETECTION', tests },
+                        (response) => {
+                            if (chrome.runtime.lastError) reject(chrome.runtime.lastError);
+                            else if (response?.success) resolve(response.report);
+                            else reject(new Error(response?.error || 'Unknown error'));
+                        }
+                    );
+                });
+            };
+
             // Initialize QA service if not already done
             if (!qaServiceRef.current) {
                 qaServiceRef.current = new MultiAgentQAService();
-
-                // Subscribe to progress updates
                 qaServiceRef.current.onProgress((message, progress, agentId) => {
                     setAgentProgress(prev => ({
                         ...prev,
                         [agentId]: { message, progress }
                     }));
-
-                    // Also add to logs
                     const agents = qaServiceRef.current!.getAgents();
                     const agent = agents.find(a => a.id === agentId);
-                    const emoji = agent?.emoji || '🤖';
-                    setLogs(prev => [...prev, `${emoji} ${agent?.name || agentId}: ${message}`]);
+                    setLogs(prev => [...prev, `${agent?.emoji || '🤖'} ${agent?.name || agentId}: ${message}`]);
                 });
-
                 setLogs(prev => [...prev, `✅ Initialized ${qaServiceRef.current?.getAgents().length || 0} specialized agents`]);
             }
 
-            // Get current tab for screenshots (if needed)
+            // Capture Screenshot
             let screenshots: string[] | undefined;
             if (chrome?.tabs) {
                 const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
@@ -192,38 +209,82 @@ function App() {
                     try {
                         const screenshot = await chrome.tabs.captureVisibleTab({ format: 'png' });
                         screenshots = [screenshot];
-                        setLogs(prev => [...prev, '📸 Screenshot captured for UX Agent']);
+                        setLogs(prev => [...prev, '📸 Screenshot captured to enhance AI analysis']);
                     } catch (err) {
                         console.warn('Screenshot capture failed:', err);
                     }
                 }
             }
 
-            // Run the multi-agent analysis
-            setLogs(prev => [...prev, '🚀 Spawning agents in parallel...']);
-            const report = await qaServiceRef.current.runAnalysis(screenshots);
+            // PARALLEL EXECUTION: Run AI Agents AND All Legacy Tests
+            setLogs(prev => [...prev, '🔄 Running 10 Legacy Tests & 5 AI Agents in parallel...']);
 
-            setMultiAgentReport(report);
+            const [aiReport, legacyReport] = await Promise.all([
+                qaServiceRef.current.runAnalysis(screenshots),
+                executeLegacyScan(Object.values(TestType) as TestType[])
+            ]);
 
-            // Convert to legacy format for compatibility
-            const legacyReport = qaServiceRef.current.convertToBugReport(report);
-            setBugReport(legacyReport);
+            setMultiAgentReport(aiReport);
+
+            // MERGE REPORTS
+            const aiConvertedReport = qaServiceRef.current.convertToBugReport(aiReport);
+
+            // Combine issues
+            const combinedIssues = [...legacyReport.allIssues, ...aiConvertedReport.allIssues];
+
+            // Recalculate Stats
+            const criticalCount = combinedIssues.filter(i => i.severity === 'critical').length;
+            const highCount = combinedIssues.filter(i => i.severity === 'high').length;
+            const mediumCount = combinedIssues.filter(i => i.severity === 'medium').length;
+
+            // Calculate combined health score (average of both methods or weighted)
+            // Weight AI score slightly higher? Let's average them for balance.
+            const overallScore = Math.round((legacyReport.healthScore.overall + aiConvertedReport.healthScore.overall) / 2);
+
+            const mergedReport: BugReport = {
+                ...legacyReport,
+                url: aiConvertedReport.url || legacyReport.url,
+                timestamp: new Date(),
+                healthScore: {
+                    overall: overallScore,
+                    functionality: legacyReport.healthScore.functionality,
+                    accessibility: Math.min(legacyReport.healthScore.accessibility, aiConvertedReport.healthScore.accessibility),
+                    performance: Math.min(legacyReport.healthScore.performance, aiConvertedReport.healthScore.performance),
+                    seo: legacyReport.healthScore.seo,
+                    security: Math.min(legacyReport.healthScore.security, aiConvertedReport.healthScore.security)
+                },
+                allIssues: combinedIssues,
+                testResults: legacyReport.testResults, // Keep legacy test results
+                summary: {
+                    totalIssues: combinedIssues.length,
+                    criticalCount,
+                    highCount,
+                    mediumCount,
+                    lowCount: combinedIssues.length - (criticalCount + highCount + mediumCount),
+                    infoCount: 0
+                }
+            };
+
+            // Attach AI executive summary to the merged report object (dynamically, TS ignore if needed or assume safe)
+            (mergedReport as any).executiveSummary = aiReport.executiveSummary;
+
+            setBugReport(mergedReport);
 
             setLogs(prev => [
                 ...prev,
-                `✅ Multi-agent scan complete in ${(report.totalAnalysisTime / 1000).toFixed(2)}s`,
-                `📊 Found ${report.synthesizedReport.summary.totalIssues} issues across ${report.agentFindings.length} agents`,
-                `🎯 Health Score: ${legacyReport.healthScore.overall}/100`
+                `✅ Comprehensive Scan Complete!`,
+                `📊 Total Issues: ${combinedIssues.length} (Legacy: ${legacyReport.allIssues.length}, AI: ${aiConvertedReport.allIssues.length})`,
+                `🎯 Global Health Score: ${overallScore}/100`
             ]);
 
             setStatus('Complete');
             setActiveTab('results');
-            setIsRunning(false);
 
         } catch (error: any) {
-            console.error('❌ Multi-agent scan failed:', error);
+            console.error('❌ Comprehensive scan failed:', error);
             setLogs(prev => [...prev, `❌ Error: ${error.message}`]);
             setStatus('Error');
+        } finally {
             setIsRunning(false);
         }
     };
@@ -337,7 +398,7 @@ function App() {
                                 disabled={isRunning}
                                 style={{ width: '100%', marginBottom: '15px', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}
                             >
-                                {isRunning ? '🔄 Multi-Agent Scan Running...' : '🚀 Run Multi-Agent Scan'}
+                                {isRunning ? '🔄 Comprehensive Scan Running...' : '🚀 Run Comprehensive Scan (AI + Legacy)'}
                             </button>
 
                             {/* Agent Progress */}
@@ -345,7 +406,7 @@ function App() {
                                 <div style={{ marginTop: '15px' }}>
                                     <h4 style={{ fontSize: '13px', marginBottom: '10px', opacity: 0.9 }}>Agent Progress:</h4>
                                     {Object.entries(agentProgress).map(([agentId, progress]) => {
-                                        const agent = qaServiceRef.current?.getAgents().find(a => a.id === agentId);
+                                        const agent = qaServiceRef.current?.getAgents()?.find(a => a.id === agentId);
                                         return (
                                             <div key={agentId} style={{ marginBottom: '8px' }}>
                                                 <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', marginBottom: '4px' }}>
@@ -425,7 +486,7 @@ function App() {
                 {activeTab === 'results' && (
                     <div className="results-panel">
                         {/* AI Executive Summary */}
-                        {multiAgentReport?.executiveSummary && (
+                        {(multiAgentReport?.executiveSummary || bugReport?.executiveSummary) && (
                             <div className="summary-card" style={{
                                 background: 'linear-gradient(to right, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1))',
                                 padding: '20px',
@@ -441,7 +502,7 @@ function App() {
                                     fontSize: '14px',
                                     color: 'rgba(255, 255, 255, 0.9)'
                                 }}>
-                                    <ReactMarkdown>{multiAgentReport.executiveSummary}</ReactMarkdown>
+                                    <ReactMarkdown>{multiAgentReport?.executiveSummary || bugReport?.executiveSummary || ''}</ReactMarkdown>
                                 </div>
                             </div>
                         )}

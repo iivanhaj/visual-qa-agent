@@ -9,6 +9,7 @@ export class CoordinatorAgent extends Agent {
     id = 'coordinator';
     name = 'Coordinator';
     emoji = '🎯';
+    model = 'gpt-4o-mini';
     systemPrompt = `You are the coordinator of a multi-agent QA testing system. Your job is to:
 1. Synthesize findings from multiple specialized agents
 2. Identify duplicate issues across agents
@@ -184,11 +185,15 @@ Keep it under 200 words.
 `;
 
             const summary = await this.callAI(prompt);
+            if (!summary || summary.trim().length === 0) {
+                throw new Error('Received empty response from AI');
+            }
             return summary;
 
-        } catch (error) {
-            console.warn('AI summary failed, using fallback');
-            return `Multi-agent analysis complete. Found ${synthesized.summary.totalIssues} issues across ${synthesized.summary.agentStats.length} specialized agents.`;
+        } catch (error: any) {
+            console.warn('AI summary failed, using fallback', error);
+            const topIssues = synthesized.prioritizedIssues.slice(0, 5).map((i: any) => `- ${i.title} (${i.severity})`).join('\n');
+            return `We discovered the following errors:\n\n${topIssues}`;
         }
     }
 }

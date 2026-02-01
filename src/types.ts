@@ -83,6 +83,7 @@ export interface BugReport {
     lowCount: number;
     infoCount: number;
   };
+  executiveSummary?: string;
 }
 
 export interface ScanHistory {

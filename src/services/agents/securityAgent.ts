@@ -9,6 +9,7 @@ export class SecurityAgent extends Agent {
     id = 'security';
     name = 'Security Agent';
     emoji = '🔒';
+    model = 'gpt-5-mini-2025-08-07';
     systemPrompt = `You are a web security researcher and penetration tester.
 Your role is to identify security vulnerabilities and potential attack vectors.
 Focus on: XSS, CSRF, mixed content, insecure protocols, sensitive data exposure, and client-side security.

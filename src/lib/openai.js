@@ -24,7 +24,7 @@ Return a JSON object with a "issues" array. Each issue should have:
 `;
 
     const response = await openai.chat.completions.create({
-        model: "gpt-4o",
+        model: "gpt-5-mini-2025-08-07",
         messages: [
             {
                 role: "system",
@@ -48,7 +48,7 @@ Return a JSON object with a "issues" array. Each issue should have:
             }
         ],
         response_format: { type: "json_object" },
-        max_tokens: 1000,
+        max_completion_tokens: 1000,
     });
 
     return JSON.parse(response.choices[0].message.content);

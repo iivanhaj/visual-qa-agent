@@ -134,9 +134,10 @@ export class MultiAgentQAService {
         const overall = Math.max(0, Math.min(100, weightedScore));
 
         // Calculate category scores based on agent findings
-        const accessibilityFindings = multiAgentReport.agentFindings.find(f => f.agentId === 'accessibility');
-        const performanceFindings = multiAgentReport.agentFindings.find(f => f.agentId === 'performance');
-        const securityFindings = multiAgentReport.agentFindings.find(f => f.agentId === 'security');
+        const findings = multiAgentReport.agentFindings || [];
+        const accessibilityFindings = findings.find(f => f.agentId === 'accessibility');
+        const performanceFindings = findings.find(f => f.agentId === 'performance');
+        const securityFindings = findings.find(f => f.agentId === 'security');
 
         return {
             url: window.location.href,

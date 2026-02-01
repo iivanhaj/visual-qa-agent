@@ -43,6 +43,7 @@ export abstract class Agent {
     abstract name: string;
     abstract emoji: string;
     abstract systemPrompt: string;
+    abstract model: string; // Dynamic model selection
 
     protected messageBus: MessageBus;
     protected startTime: number = 0;
@@ -84,9 +85,9 @@ export abstract class Agent {
         }
 
         const response = await client.chat.completions.create({
-            model: useVision ? 'gpt-4-turbo' : 'gpt-4o-mini',
+            model: useVision ? 'gpt-5-mini-2025-08-07' : this.model,
             messages: messages,
-            max_tokens: 1000,
+            max_completion_tokens: 1000,
             temperature: 0.3
         });
 

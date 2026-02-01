@@ -44,12 +44,12 @@ Provide:
 Be concise and practical.`;
 
             const completion = await client.chat.completions.create({
-                model: "gpt-4o-mini",
+                model: "gpt-5-mini-2025-08-07",
                 messages: [
                     { role: "system", content: "You are an expert web developer helping to fix bugs. Provide clear, actionable advice." },
                     { role: "user", content: prompt }
                 ],
-                max_tokens: 300,
+                max_completion_tokens: 300,
                 temperature: 0.7
             });
 
@@ -116,12 +116,12 @@ Provide:
 Be professional and concise.`;
 
             const completion = await client.chat.completions.create({
-                model: "gpt-4o-mini",
+                model: "gpt-5-mini-2025-08-07",
                 messages: [
                     { role: "system", content: "You are a web quality consultant providing executive summaries." },
                     { role: "user", content: prompt }
                 ],
-                max_tokens: 400,
+                max_completion_tokens: 400,
                 temperature: 0.7
             });
 
@@ -179,12 +179,12 @@ Issue 2: [fix suggestion]
 ...`;
 
             const completion = await client.chat.completions.create({
-                model: "gpt-4o-mini",
+                model: "gpt-5-mini-2025-08-07",
                 messages: [
                     { role: "system", content: "You are an expert web developer. Provide concise, actionable fixes." },
                     { role: "user", content: prompt }
                 ],
-                max_tokens: 500,
+                max_completion_tokens: 500,
                 temperature: 0.7
             });
 

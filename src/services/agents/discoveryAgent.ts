@@ -9,6 +9,7 @@ export class DiscoveryAgent extends Agent {
     id = 'discovery';
     name = 'Discovery Agent';
     emoji = '🔍';
+    model = 'gpt-4o-mini'; // Not used, but required by base class
     systemPrompt = `You are a web structure analysis expert. You map webpage layouts and identify user interaction patterns.`;
 
     async analyze(context: PageContext): Promise<AgentFindings> {

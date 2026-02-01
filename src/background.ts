@@ -103,7 +103,7 @@ async function handleStartAgent(goal: string, sendResponse: (response: any) => v
         }));
 
         const completion = await client.chat.completions.create({
-            model: "gpt-4-turbo",
+            model: "gpt-5-mini-2025-08-07",
             messages: [
                 { role: "system", content: AGENT_SYSTEM_PROMPT },
                 {
@@ -116,7 +116,7 @@ async function handleStartAgent(goal: string, sendResponse: (response: any) => v
                     ]
                 }
             ],
-            max_tokens: 500,
+            max_completion_tokens: 500,
             response_format: { type: "json_object" }
         });
 
